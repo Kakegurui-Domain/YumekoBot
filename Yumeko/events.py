@@ -1,6 +1,6 @@
 from telethon import events
 
-from lunaBot import telethn
+from Yumeko import telethn
 
 
 def register(**args):
