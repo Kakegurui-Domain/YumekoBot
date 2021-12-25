@@ -1,5 +1,5 @@
-from YumekoBot.events import register
-from YumekoBot import telethn as tbot
+from Yumeko.events import register
+from Yumeko import telethn as tbot
 TMP_DOWNLOAD_DIRECTORY = "./"
 from telethon import events
 import os
