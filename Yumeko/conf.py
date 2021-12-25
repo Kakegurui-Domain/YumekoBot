@@ -1,5 +1,5 @@
 from envparse import env
-from yumeko import LOGGER
+from Yumeko import LOGGER
 
 DEFAULTS = {
     "LOAD_MODULES": True,
