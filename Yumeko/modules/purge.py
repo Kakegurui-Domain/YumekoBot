@@ -1,8 +1,8 @@
 import time
 from telethon import events
 
-from lunaBot import telethn
-from lunaBot.modules.helper_funcs.telethn.chatstatus import (
+from YumekoBot import telethn
+from YumekoBot.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )
