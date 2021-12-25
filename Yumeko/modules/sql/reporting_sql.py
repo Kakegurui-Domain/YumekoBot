@@ -1,7 +1,7 @@
 import threading
 from typing import Union
 
-from lunaBot.modules.sql import BASE, SESSION
+from Yumeko.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, BigInteger, String
 
 
