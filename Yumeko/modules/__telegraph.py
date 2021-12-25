@@ -1,12 +1,12 @@
-from lunaBot.events import register
-from lunaBot import telethn as tbot
+from YumekoBot.events import register
+from YumekoBot import telethn as tbot
 TMP_DOWNLOAD_DIRECTORY = "./"
 from telethon import events
 import os
 from PIL import Image
 from datetime import datetime
 from telegraph import Telegraph, upload_file, exceptions
-Sammy = "luna"
+Sammy = "Yumeko"
 telegraph = Telegraph()
 r = telegraph.create_account(short_name=Sammy)
 auth_url = r["auth_url"]
