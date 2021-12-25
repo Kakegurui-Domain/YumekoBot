@@ -1,4 +1,4 @@
-from lunaBot import telethn as tbot
+from Yumeko import telethn as tbot
 import os
 
 from gtts import gTTS
@@ -8,9 +8,9 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from lunaBot import *
+from Yumeko import *
 
-from lunaBot.events import register
+from Yumeko.events import register
 
 
 async def is_register_admin(chat, user):
