@@ -1,7 +1,7 @@
 import random, html
 
 from Yumeko import dispatcher
-from lunaBot.modules.disable import (
+from Yumeko.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
