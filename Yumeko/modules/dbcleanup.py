@@ -1,9 +1,9 @@
 from time import sleep
 
-import YumekoBot.modules.sql.global_bans_sql as gban_sql
-import YumekoBot.modules.sql.users_sql as user_sql
-from YumekoBot import DEV_USERS, OWNER_ID, dispatcher
-from YumekoBott.modules.helper_funcs.chat_status import dev_plus
+import Yumeko.modules.sql.global_bans_sql as gban_sql
+import Yumeko.modules.sql.users_sql as user_sql
+from Yumeko import DEV_USERS, OWNER_ID, dispatcher
+from Yumeko.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
