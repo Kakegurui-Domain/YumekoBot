@@ -1,9 +1,9 @@
 from typing import Optional
 
-import YumekoBot.modules.sql.rules_sql as sql
-from YumekoBot import dispatcher
-from YumekoBot.modules.helper_funcs.chat_status import user_admin
-from YumekoBot.modules.helper_funcs.string_handling import markdown_parser
+import Yumeko.modules.sql.rules_sql as sql
+from Yumeko import dispatcher
+from Yumeko.modules.helper_funcs.chat_status import user_admin
+from Yumeko.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
