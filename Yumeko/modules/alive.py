@@ -13,12 +13,12 @@ PHOTO = "https://telegra.ph/file/7c3c26e0ed938aec91209.jpg"
 async def awake(event):
   tai = event.sender.first_name
   YUMEKO = "**Holla I'm Yumeko!** \n\n"
-  YUMEKO += "🔴 **I'm Working Properly** \n\n"
-  YUMEKO += "🔴 **My Owners : [Tarun • [ᴀc͜͡ɢᴄ]](https://t.me/TheBlacklinen)[亗 ʀʏᴜ](https://t.me/Ryu_God)** \n\n"
-  YUMEKO += f"🔴 **Telethon Version : {tlhver}** \n\n"
-  YUMEKO += f"🔴 **Pyrogram Version : {pyrover}** \n\n"
+  YUMEKO += "×**I'm Working Properly** \n\n"
+  YUMEKO += "×**My Owners : [Tarun • [ᴀc͜͡ɢᴄ]](https://t.me/TheBlacklinen), [亗 ʀʏᴜ](https://t.me/Ryu_God)** \n\n"
+  YUMEKO += f"×**Telethon Version : {tlhver}** \n\n"
+  YUMEKO += f"×**Pyrogram Version : {pyrover}** \n\n"
   YUMEKO += "**Thanks For Adding Me Here ❤️**"
-  BUTTON = [[Button.url("ʜᴇʟᴘ", "https://t.me/YumekoProBot?start=help"), Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/lunaXresso")]]
+  BUTTON = [[Button.url("ʜᴇʟᴘ", "https://t.me/YumekoProBot?start=help"), Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=YUMEKO,  buttons=BUTTON)
 
 @MEMEK(pattern=("/reload"))
