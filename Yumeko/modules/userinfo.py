@@ -24,15 +24,15 @@ from lunaBot import (
     dispatcher,
     sw,
 )
-from lunaBot.__main__ import STATS, TOKEN, USER_INFO
-import lunaBot.modules.sql.userinfo_sql as sql
-from lunaBot.modules.disable import DisableAbleCommandHandler
-from lunaBot.modules.sql.global_bans_sql import is_user_gbanned
-from lunaBot.modules.sql.afk_sql import is_afk, check_afk_status
-from lunaBot.modules.sql.users_sql import get_user_num_chats
-from lunaBot.modules.helper_funcs.chat_status import sudo_plus
-from lunaBot.modules.helper_funcs.extraction import extract_user
-from lunaBot import telethn as YoneTelethonClient, TIGERS, DRAGONS, DEMONS
+from YumekoBot.__main__ import STATS, TOKEN, USER_INFO
+import YumekoBot.modules.sql.userinfo_sql as sql
+from YumekoBot.modules.disable import DisableAbleCommandHandler
+from YumekoBot.modules.sql.global_bans_sql import is_user_gbanned
+from YumekoBot.modules.sql.afk_sql import is_afk, check_afk_status
+from YumekoBot.modules.sql.users_sql import get_user_num_chats
+from YumekoBot.modules.helper_funcs.chat_status import sudo_plus
+from YumekoBot.modules.helper_funcs.extraction import extract_user
+from YumekoBot import telethn as YoneTelethonClient, TIGERS, DRAGONS, DEMONS
 
 
 def no_by_per(totalhp, percentage):
