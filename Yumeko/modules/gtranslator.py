@@ -9,8 +9,8 @@ from telegram import (
     InlineKeyboardMarkup,
 )
 from telegram.ext import CallbackContext, run_async
-from lunaBot import dispatcher
-from lunaBot.modules.disable import DisableAbleCommandHandler
+from YumekoBot import dispatcher
+from YumekoBot.modules.disable import DisableAbleCommandHandler
 from gpytranslate import SyncTranslator
 
 
