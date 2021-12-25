@@ -2,9 +2,9 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from YumekoBot import DEV_USERS
-from YumekoBot import pbot as app
-from YumekoBot.core.sections import section
+from Yumeko import DEV_USERS
+from Yumeko import pbot as app
+from Yumeko.core.sections import section
 
 
 async def get_user_info(user, already=False):
