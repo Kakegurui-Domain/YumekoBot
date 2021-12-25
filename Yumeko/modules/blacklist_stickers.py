@@ -1,17 +1,17 @@
 import html
 from typing import Optional
 
-import YumekoBot.modules.sql.blsticker_sql as sql
-from YumekoBot import LOGGER, dispatcher
-from YumekoBot.modules.connection import connected
-from YumekoBot.modules.disable import DisableAbleCommandHandler
-from YumekoBot.modules.helper_funcs.alternate import send_message
-from YumekoBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from YumekoBot.modules.helper_funcs.misc import split_message
-from YumekoBot.modules.helper_funcs.string_handling import extract_time
+import Yumeko.modules.sql.blsticker_sql as sql
+from Yumeko import LOGGER, dispatcher
+from Yumeko.modules.connection import connected
+from Yumeko.modules.disable import DisableAbleCommandHandler
+from Yumeko.modules.helper_funcs.alternate import send_message
+from Yumeko.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from Yumeko.modules.helper_funcs.misc import split_message
+from Yumeko.modules.helper_funcs.string_handling import extract_time
 
-from YumekoBot.modules.log_channel import loggable
-from YumekoBot.modules.warns import warn
+from Yumeko.modules.log_channel import loggable
+from Yumeko.modules.warns import warn
 from telegram import Chat, Message, ParseMode, Update, User, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler
