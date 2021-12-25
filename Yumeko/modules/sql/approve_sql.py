@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, BigInteger, func, distinct
 
-from lunaBot.modules.sql import BASE, SESSION
+from Yumeko.modules.sql import BASE, SESSION
 
 
 class Approvals(BASE):
