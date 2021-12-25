@@ -1,6 +1,6 @@
 import requests
-from YumekoBot import dispatcher
-from YumekoBot.modules.disable import DisableAbleCommandHandler
+from Yumeko import dispatcher
+from Yumeko.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
