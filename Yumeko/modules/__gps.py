@@ -1,8 +1,8 @@
 import os
-from YumekoBot import telethn as tbot
+from Yumeko import telethn as tbot
 from geopy.geocoders import Nominatim
-from YumekoBot.events import register
-from YumekoBot import *
+from Yumeko.events import register
+from Yumeko import *
 from telethon import *
 from telethon.tl import *
 
