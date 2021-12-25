@@ -1,6 +1,6 @@
 from telethon.tl.types import InputMediaDice
 
-from YumekoBot.events import register
+from Yumeko.events import register
 
 
 @register(pattern="^/dice(?: |$)(.*)")
