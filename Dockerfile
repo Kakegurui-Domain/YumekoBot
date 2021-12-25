@@ -62,13 +62,13 @@ RUN apt update && apt upgrade -y && \
 RUN apt-get install -y ffmpeg python3-pip curl
 RUN pip3 install --upgrade pip setuptools
 
-RUN mkdir /lunaBot/
-COPY . /lunaBot
-WORKDIR /lunaBot
+RUN mkdir /Yumeko/
+COPY . /Yumeko
+WORKDIR /Yumeko
 
 ENV PATH="/home/bot/bin:$PATH"
 
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","lunaBot"]
+CMD ["python3","-m","Yumeko"]
