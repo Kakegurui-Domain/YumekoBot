@@ -3,9 +3,9 @@ import re
 from typing import Optional
 
 import telegram
-from lunaBot import TIGERS, WOLVES, dispatcher
-from lunaBot.modules.disable import DisableAbleCommandHandler
-from lunaBot.modules.helper_funcs.chat_status import (
+from YumekoBot import TIGERS, WOLVES, dispatcher
+from YumekoBot.modules.disable import DisableAbleCommandHandler
+from YumekoBot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     is_user_admin,
@@ -14,16 +14,16 @@ from lunaBot.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
     can_delete,
 )
-from lunaBot.modules.helper_funcs.extraction import (
+from YumekoBot.modules.helper_funcs.extraction import (
     extract_text,
     extract_user,
     extract_user_and_text,
 )
-from lunaBot.modules.helper_funcs.filters import CustomFilters
-from lunaBot.modules.helper_funcs.misc import split_message
-from lunaBot.modules.helper_funcs.string_handling import split_quotes
-from lunaBot.modules.log_channel import loggable
-from lunaBot.modules.sql import warns_sql as sql
+from YumekoBot.modules.helper_funcs.filters import CustomFilters
+from YumekoBot.modules.helper_funcs.misc import split_message
+from YumekoBot.modules.helper_funcs.string_handling import split_quotes
+from YumekoBot.modules.log_channel import loggable
+from YumekoBot.modules.sql import warns_sql as sql
 from telegram import (
     CallbackQuery,
     Chat,
