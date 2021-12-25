@@ -1,5 +1,5 @@
 from sqlalchemy import Column, String, Numeric, Boolean
-from lunaBot.modules.sql import BASE, SESSION
+from Yumeko.modules.sql import BASE, SESSION
 
 
 class forceSubscribe(BASE):
