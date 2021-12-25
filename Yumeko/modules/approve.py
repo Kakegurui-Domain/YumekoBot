@@ -1,11 +1,11 @@
 import html
-from lunaBot.modules.disable import DisableAbleCommandHandler
-from lunaBot import dispatcher, DRAGONS
-from lunaBot.modules.helper_funcs.extraction import extract_user
+from YumekoBot.modules.disable import DisableAbleCommandHandler
+from YumekoBot import dispatcher, DRAGONS
+from YumekoBot.modules.helper_funcs.extraction import extract_user
 from telegram.ext import CallbackContext, CallbackQueryHandler, Filters, run_async
-import lunaBot.modules.sql.approve_sql as sql
-from lunaBot.modules.helper_funcs.chat_status import user_admin
-from lunaBot.modules.log_channel import loggable
+import YumekoBot.modules.sql.approve_sql as sql
+from YumekoBot.modules.helper_funcs.chat_status import user_admin
+from YumekoBot.modules.log_channel import loggable
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import BadRequest
