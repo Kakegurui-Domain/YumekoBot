@@ -5,7 +5,7 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from lunaBot import (
+from YumekoBot import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -15,8 +15,8 @@ from lunaBot import (
     WOLVES,
     dispatcher,
 )
-from lunaBot.modules.disable import DisableAbleCommandHandler
-from lunaBot.modules.helper_funcs.chat_status import (
+from YumekoBot.modules.disable import DisableAbleCommandHandler
+from YumekoBot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
@@ -27,9 +27,9 @@ from lunaBot.modules.helper_funcs.chat_status import (
     user_can_ban,
     can_delete,
 )
-from lunaBot.modules.helper_funcs.extraction import extract_user_and_text
-from lunaBot.modules.helper_funcs.string_handling import extract_time
-from lunaBot.modules.log_channel import gloggable, loggable
+from YumekoBot.modules.helper_funcs.extraction import extract_user_and_text
+from YumekoBot.modules.helper_funcs.string_handling import extract_time
+from YumekoBot.modules.log_channel import gloggable, loggable
 
 
 @run_async
