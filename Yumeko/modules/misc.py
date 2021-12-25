@@ -1,6 +1,6 @@
-from lunaBot.modules.helper_funcs.chat_status import user_admin
-from lunaBot.modules.disable import DisableAbleCommandHandler
-from lunaBot import dispatcher
+from YumekoBot.modules.helper_funcs.chat_status import user_admin
+from YumekoBot.modules.disable import DisableAbleCommandHandler
+from YumekoBot import dispatcher
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram import ParseMode, Update
