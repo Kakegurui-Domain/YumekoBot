@@ -1,6 +1,6 @@
 import wikipedia
-from lunaBot import dispatcher
-from lunaBot.modules.disable import DisableAbleCommandHandler
+from YumekoBot import dispatcher
+from YumekoBot.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 from wikipedia.exceptions import DisambiguationError, PageError
