@@ -2,8 +2,8 @@ import datetime
 from typing import List
 
 import requests
-from YumekoBot import TIME_API_KEY, dispatcher
-from YumekoBot.modules.disable import DisableAbleCommandHandler
+from Yumeko import TIME_API_KEY, dispatcher
+from Yumeko.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
