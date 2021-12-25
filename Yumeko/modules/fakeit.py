@@ -5,8 +5,8 @@ from faker import Faker
 from faker.providers import internet
 from telethon import events
 
-from lunaBot.pyrogramee.telethonbasics import is_admin
-from lunaBot import telethn as tbot
+from Yumeko.pyrogramee.telethonbasics import is_admin
+from Yumeko import telethn as tbot
 
 @tbot.on(events.NewMessage(pattern="/fakegen$"))
 async def hi(event):
