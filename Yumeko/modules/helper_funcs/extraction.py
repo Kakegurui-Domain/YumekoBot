@@ -1,7 +1,7 @@
 from typing import List, Optional
 
-from lunaBot import LOGGER
-from lunaBot.modules.users import get_user_id
+from Yumeko import LOGGER
+from Yumeko.modules.users import get_user_id
 from telegram import Message, MessageEntity
 from telegram.error import BadRequest
 
@@ -47,7 +47,7 @@ def extract_user_and_text(
         user_id = get_user_id(user)
         if not user_id:
             message.reply_text(
-                "No idea who this user is. You'll be able to interact with them if "
+                "Baka, No idea who this user is. You'll be able to interact with them if "
                 "you reply to that person's message instead, or forward one of that user's messages."
             )
             return None, None
