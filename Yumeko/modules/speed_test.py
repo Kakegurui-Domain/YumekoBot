@@ -1,7 +1,7 @@
 import speedtest
-from YumekoBot import DEV_USERS, dispatcher
-from YumekoBot.modules.disable import DisableAbleCommandHandler
-from YumekoBot.modules.helper_funcs.chat_status import dev_plus
+from Yumeko import DEV_USERS, dispatcher
+from Yumeko.modules.disable import DisableAbleCommandHandler
+from Yumeko.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
 
