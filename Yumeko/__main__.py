@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 YUMEKO_IMG = "https://telegra.ph/file/fbb803ea2af74de745362.jpg"
 
 PM_START_TEXT = """
-**Hey I am Yumeko** [ㅤ](https://telegra.ph/file/efdee100cc31b4b3e0be2.mp4)
+**Hey I am Yumeko** [ㅤ](https://telegra.ph/file/6643b0fb6792b2e5e844a.mp4)
 ️➖➖➖➖➖➖➖➖➖➖➖➖➖
 **×I'm a Powerfull Group Manager Bot With Cool Modules. feel free to add me to your groups!**
 ️➖➖➖➖➖➖➖➖➖➖➖➖➖
@@ -101,7 +101,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-**Main commands:**  [ㅤ]()
+**Main commands:**  [ㅤ](https://telegra.ph/file/efdee100cc31b4b3e0be2.mp4)
 ❂ /start: Starts me! You've probably already used this.
 ❂ /help: Sends this message; I'll tell you more about myself.
 
