@@ -3,7 +3,7 @@ from typing import List, Dict
 from telegram import MAX_MESSAGE_LENGTH, InlineKeyboardButton, Bot, ParseMode
 from telegram.error import TelegramError
 
-from lunaBot import LOAD, NO_LOAD
+from Yumeko import LOAD, NO_LOAD
 
 
 class EqInlineKeyboardButton(InlineKeyboardButton):
@@ -68,7 +68,7 @@ def paginate_modules(page_n: int, module_dict: Dict, prefix, chat=None) -> List:
     if calc in [1, 2]:
         pairs.append([modules[-1]])
     else:
-        pairs += [[EqInlineKeyboardButton("Home", callback_data="luna_back")]]
+        pairs += [[EqInlineKeyboardButton("Home", callback_data="Yumeko_back")]]
     return pairs
 
 
