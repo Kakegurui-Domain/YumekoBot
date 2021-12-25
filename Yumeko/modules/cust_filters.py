@@ -15,25 +15,25 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html, escape_markdown
 
-from YumekoBot import dispatcher, LOGGER, DRAGONS
-from YumekoBot.modules.disable import DisableAbleCommandHandler
-from YumekoBot.modules.helper_funcs.handlers import MessageHandlerChecker
-from YumekoBot.modules.helper_funcs.chat_status import user_admin
-from YumekoBot.modules.helper_funcs.extraction import extract_text
-from YumekoBot.modules.helper_funcs.filters import CustomFilters
-from YumekoBot.modules.helper_funcs.misc import build_keyboard_parser
-from YumekoBot.modules.helper_funcs.msg_types import get_filter_type
-from YumekoBot.modules.helper_funcs.string_handling import (
+from Yumeko import dispatcher, LOGGER, DRAGONS
+from Yumeko.modules.disable import DisableAbleCommandHandler
+from Yumeko.modules.helper_funcs.handlers import MessageHandlerChecker
+from Yumeko.modules.helper_funcs.chat_status import user_admin
+from Yumeko.modules.helper_funcs.extraction import extract_text
+from Yumeko.modules.helper_funcs.filters import CustomFilters
+from Yumeko.modules.helper_funcs.misc import build_keyboard_parser
+from Yumeko.modules.helper_funcs.msg_types import get_filter_type
+from Yumeko.modules.helper_funcs.string_handling import (
     split_quotes,
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from YumekoBot.modules.sql import cust_filters_sql as sql
+from Yumeko.modules.sql import cust_filters_sql as sql
 
-from YumekoBot.modules.connection import connected
+from Yumeko.modules.connection import connected
 
-from YumekoBot.modules.helper_funcs.alternate import send_message, typing_action
+from Yumeko.modules.helper_funcs.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 
