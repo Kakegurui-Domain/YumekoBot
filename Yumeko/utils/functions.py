@@ -13,8 +13,8 @@ import speedtest
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from pyrogram.types import Message
 
-from lunaBot import aiohttpsession as aiosession
-from lunaBot.utils.http import get, post
+from Yumeko import aiohttpsession as aiosession
+from Yumeko.utils.http import get, post
 
 
 def generate_captcha():
