@@ -4,14 +4,14 @@ import nekos
 import requests
 from PIL import Image
 from telegram import ParseMode
-from lunaBot import dispatcher, updater
-import lunaBot.modules.sql.nsfw_sql as sql
-from lunaBot.modules.log_channel import gloggable
+from YumekoBot import dispatcher, updater
+import YumekoBot.modules.sql.nsfw_sql as sql
+from YumekoBot.modules.log_channel import gloggable
 from telegram import Message, Chat, Update, Bot, MessageEntity
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CommandHandler, run_async, CallbackContext
-from lunaBot.modules.helper_funcs.filters import CustomFilters
-from lunaBot.modules.helper_funcs.chat_status import user_admin
+from YumekoBot.modules.helper_funcs.filters import CustomFilters
+from YumekoBot.modules.helper_funcs.chat_status import user_admin
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
 @run_async
