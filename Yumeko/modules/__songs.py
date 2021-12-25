@@ -6,8 +6,8 @@ import requests
 import wget
 from pyrogram import filters
 
-from lunaBot import pbot as Jebot
-from lunaBot.pyrogramee.dark import get_arg
+from YumekoBot import pbot as Jebot
+from YumekoBot.pyrogramee.dark import get_arg
 
 
 @Jebot.on_message(filters.command("saavn"))
