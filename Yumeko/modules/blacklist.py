@@ -6,18 +6,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-import YumekoBot.modules.sql.blacklist_sql as sql
-from YumekoBot import dispatcher, LOGGER
-from YumekoBot.modules.disable import DisableAbleCommandHandler
-from YumekoBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from YumekoBot.modules.helper_funcs.extraction import extract_text
-from YumekoBot.modules.helper_funcs.misc import split_message
-from YumekoBot.modules.log_channel import loggable
-from YumekoBot.modules.warns import warn
-from YumekoBot.modules.helper_funcs.string_handling import extract_time
-from YumekoBot.modules.connection import connected
-from YumekoBot.modules.sql.approve_sql import is_approved
-from YumekoBot.modules.helper_funcs.alternate import send_message, typing_action
+import Yumeko.modules.sql.blacklist_sql as sql
+from Yumeko import dispatcher, LOGGER
+from Yumeko.modules.disable import DisableAbleCommandHandler
+from Yumeko.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from Yumeko.modules.helper_funcs.extraction import extract_text
+from Yumeko.modules.helper_funcs.misc import split_message
+from Yumeko.modules.log_channel import loggable
+from Yumeko.modules.warns import warn
+from Yumeko.modules.helper_funcs.string_handling import extract_time
+from Yumeko.modules.connection import connected
+from Yumeko.modules.sql.approve_sql import is_approved
+from Yumeko.modules.helper_funcs.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 
