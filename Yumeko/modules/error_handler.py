@@ -9,7 +9,7 @@ import requests
 from telegram import Update, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import CallbackContext, CommandHandler
 
-from lunaBot import dispatcher, DEV_USERS, ERROR_LOGS
+from Yumeko import dispatcher, DEV_USERS, ERROR_LOGS
 
 pretty_errors.mono()
 
