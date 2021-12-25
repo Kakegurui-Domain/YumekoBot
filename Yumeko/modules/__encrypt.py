@@ -1,6 +1,6 @@
-from YumekoBot import telethn as tbot
+from Yumeko import telethn as tbot
 import os
-from YumekoBot.events import register
+from Yumeko.events import register
 import secureme
 
 @register(pattern="^/encrypt ?(.*)")
