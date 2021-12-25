@@ -1,11 +1,11 @@
 import html
-from YumekoBot.modules.disable import DisableAbleCommandHandler
-from YumekoBot import dispatcher, DRAGONS
-from YumekoBot.modules.helper_funcs.extraction import extract_user
+from Yumeko.modules.disable import DisableAbleCommandHandler
+from Yumeko import dispatcher, DRAGONS
+from Yumeko.modules.helper_funcs.extraction import extract_user
 from telegram.ext import CallbackContext, CallbackQueryHandler, Filters, run_async
-import YumekoBot.modules.sql.approve_sql as sql
-from YumekoBot.modules.helper_funcs.chat_status import user_admin
-from YumekoBot.modules.log_channel import loggable
+import Yumeko.modules.sql.approve_sql as sql
+from Yumeko.modules.helper_funcs.chat_status import user_admin
+from Yumeko.modules.log_channel import loggable
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import BadRequest
