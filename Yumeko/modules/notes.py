@@ -3,14 +3,14 @@ from io import BytesIO
 import random
 from typing import Optional
 
-import lunaBot.modules.sql.notes_sql as sql
-from lunaBot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
-from lunaBot.modules.disable import DisableAbleCommandHandler
-from lunaBot.modules.helper_funcs.handlers import MessageHandlerChecker
-from lunaBot.modules.helper_funcs.chat_status import user_admin, connection_status
-from lunaBot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from lunaBot.modules.helper_funcs.msg_types import get_note_type
-from lunaBot.modules.helper_funcs.string_handling import (
+import YumekoBot.modules.sql.notes_sql as sql
+from YumekoBot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
+from YumekoBot.modules.disable import DisableAbleCommandHandler
+from YumekoBot.modules.helper_funcs.handlers import MessageHandlerChecker
+from YumekoBot.modules.helper_funcs.chat_status import user_admin, connection_status
+from YumekoBot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from YumekoBot.modules.helper_funcs.msg_types import get_note_type
+from YumekoBot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
 )
 from telegram import (
