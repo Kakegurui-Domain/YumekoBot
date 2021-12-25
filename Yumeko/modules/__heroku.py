@@ -5,8 +5,8 @@ import os
 import heroku3
 import requests
 
-from lunaBot import telethn as borg, HEROKU_APP_NAME, HEROKU_API_KEY, OWNER_ID
-from lunaBot.events import register
+from YumekoBot import telethn as borg, HEROKU_APP_NAME, HEROKU_API_KEY, OWNER_ID
+from YumekoBot.events import register
 
 heroku_api = "https://api.heroku.com"
 Heroku = heroku3.from_key(HEROKU_API_KEY)
