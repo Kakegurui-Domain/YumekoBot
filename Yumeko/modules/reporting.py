@@ -1,9 +1,9 @@
 import html
 
-from lunaBot import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
-from lunaBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from lunaBot.modules.log_channel import loggable
-from lunaBot.modules.sql import reporting_sql as sql
+from YumekoBot import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
+from YumekoBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from YumekoBot.modules.log_channel import loggable
+from YumekoBot.modules.sql import reporting_sql as sql
 from telegram import Chat, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
