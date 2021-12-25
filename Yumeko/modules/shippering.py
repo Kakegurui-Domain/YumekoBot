@@ -1,5 +1,5 @@
-from lunaBot import pbot as app
-from lunaBot.utils.dbfunc import get_couple, save_couple
+from YumekoBot import pbot as app
+from YumekoBot.utils.dbfunc import get_couple, save_couple
 from pyrogram import filters
 import random
 from datetime import datetime
