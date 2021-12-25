@@ -5,9 +5,9 @@ import time
 from functools import partial
 from contextlib import suppress
 
-import lunaBot.modules.sql.welcome_sql as sql
-import lunaBot
-from lunaBot import (
+import YumekoBot.modules.sql.welcome_sql as sql
+import YumekoBot
+from YumekoBot import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
