@@ -355,7 +355,7 @@ def help_button(update, context):
 
 
 @run_async
-def luna_about_callback(update, context):
+def yumeko_about_callback(update, context):
     query = update.callback_query
     if query.data == "yumeko_":
         query.message.edit_text(
