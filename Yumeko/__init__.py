@@ -107,7 +107,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from lunaBot.config import Development as Config
+    from yumeko.config import Development as Config
 
     TOKEN = Config.TOKEN
 
