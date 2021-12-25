@@ -1,7 +1,7 @@
 import speedtest
-from lunaBot import DEV_USERS, dispatcher
-from lunaBot.modules.disable import DisableAbleCommandHandler
-from lunaBot.modules.helper_funcs.chat_status import dev_plus
+from YumekoBot import DEV_USERS, dispatcher
+from YumekoBot.modules.disable import DisableAbleCommandHandler
+from YumekoBot.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
 
