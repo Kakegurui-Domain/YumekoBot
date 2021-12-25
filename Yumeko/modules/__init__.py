@@ -1,4 +1,4 @@
-from YumekoBot import LOAD, LOGGER, NO_LOAD
+from Yumeko import LOAD, LOGGER, NO_LOAD
 
 
 def __list_all_modules():
