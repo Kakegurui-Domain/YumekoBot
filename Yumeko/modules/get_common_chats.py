@@ -1,9 +1,9 @@
 import os
 from time import sleep
 
-from YumekoBot import OWNER_ID, dispatcher
-from YumekoBot.modules.helper_funcs.extraction import extract_user
-from YumekoBot.modules.sql.users_sql import get_user_com_chats
+from Yumeko import OWNER_ID, dispatcher
+from Yumeko.modules.helper_funcs.extraction import extract_user
+from Yumeko.modules.sql.users_sql import get_user_com_chats
 from telegram import Update
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, Filters
