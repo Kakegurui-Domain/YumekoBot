@@ -4,9 +4,9 @@ from time import time
 from pyrogram import filters
 from pyrogram.types import Message
 
-from lunaBot import BOT_ID, BOT_USERNAME
-from lunaBot import DEV_USERS
-from lunaBot.core.sections import bold, section, w
+from Yumeko import BOT_ID, BOT_USERNAME
+from Yumeko import DEV_USERS
+from Yumeko.core.sections import bold, section, w
 tasks = {}
 TASKS_LOCK = Lock()
 arrow = lambda x: (x.text if x else "") + "\n`→`"
