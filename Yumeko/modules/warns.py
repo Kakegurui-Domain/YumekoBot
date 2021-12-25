@@ -3,9 +3,9 @@ import re
 from typing import Optional
 
 import telegram
-from YumekoBot import TIGERS, WOLVES, dispatcher
-from YumekoBot.modules.disable import DisableAbleCommandHandler
-from YumekoBot.modules.helper_funcs.chat_status import (
+from Yumeko import TIGERS, WOLVES, dispatcher
+from Yumeko.modules.disable import DisableAbleCommandHandler
+from Yumeko.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     is_user_admin,
@@ -14,16 +14,16 @@ from YumekoBot.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
     can_delete,
 )
-from YumekoBot.modules.helper_funcs.extraction import (
+from Yumeko.modules.helper_funcs.extraction import (
     extract_text,
     extract_user,
     extract_user_and_text,
 )
-from YumekoBot.modules.helper_funcs.filters import CustomFilters
-from YumekoBot.modules.helper_funcs.misc import split_message
-from YumekoBot.modules.helper_funcs.string_handling import split_quotes
-from YumekoBot.modules.log_channel import loggable
-from YumekoBot.modules.sql import warns_sql as sql
+from Yumeko.modules.helper_funcs.filters import CustomFilters
+from Yumeko.modules.helper_funcs.misc import split_message
+from Yumeko.modules.helper_funcs.string_handling import split_quotes
+from Yumeko.modules.log_channel import loggable
+from Yumeko.modules.sql import warns_sql as sql
 from telegram import (
     CallbackQuery,
     Chat,
