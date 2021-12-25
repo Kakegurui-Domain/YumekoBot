@@ -1,17 +1,17 @@
 import html
 from typing import Optional
 
-import lunaBot.modules.sql.blsticker_sql as sql
-from lunaBot import LOGGER, dispatcher
-from lunaBot.modules.connection import connected
-from lunaBot.modules.disable import DisableAbleCommandHandler
-from lunaBot.modules.helper_funcs.alternate import send_message
-from lunaBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from lunaBot.modules.helper_funcs.misc import split_message
-from lunaBot.modules.helper_funcs.string_handling import extract_time
+import YumekoBot.modules.sql.blsticker_sql as sql
+from YumekoBot import LOGGER, dispatcher
+from YumekoBot.modules.connection import connected
+from YumekoBot.modules.disable import DisableAbleCommandHandler
+from YumekoBot.modules.helper_funcs.alternate import send_message
+from YumekoBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from YumekoBot.modules.helper_funcs.misc import split_message
+from YumekoBot.modules.helper_funcs.string_handling import extract_time
 
-from lunaBot.modules.log_channel import loggable
-from lunaBot.modules.warns import warn
+from YumekoBot.modules.log_channel import loggable
+from YumekoBot.modules.warns import warn
 from telegram import Chat, Message, ParseMode, Update, User, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler
