@@ -25,8 +25,8 @@ from google_trans_new import google_translator
 from telethon import events
 from telethon.tl.types import ChatBannedRights
 
-from YumekoBot import BOT_ID
-from YumekoBot.conf import get_int_key, get_str_key
+from Yumeko import BOT_ID
+from Yumeko.conf import get_int_key, get_str_key
 
 # from Yumeko.db.mongo_helpers.nsfw_guard import add_chat, get_all_nsfw_chats, is_chat_in_db, rm_chat
 from Yumeko.pyrogramee.telethonbasics import is_admin
