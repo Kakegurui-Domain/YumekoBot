@@ -2,9 +2,9 @@ import sre_constants
 
 import regex
 import telegram
-from lunaBot import LOGGER, dispatcher
-from lunaBot.modules.disable import DisableAbleMessageHandler
-from lunaBot.modules.helper_funcs.regex_helper import infinite_loop_check
+from YumekoBot import LOGGER, dispatcher
+from YumekoBot.modules.disable import DisableAbleMessageHandler
+from YumekoBot.modules.helper_funcs.regex_helper import infinite_loop_check
 from telegram import Update
 from telegram.ext import CallbackContext, Filters, run_async
 
