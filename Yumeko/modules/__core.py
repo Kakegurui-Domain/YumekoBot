@@ -5,9 +5,9 @@ import asyncio
 import os
 import time
 from datetime import datetime
-from YumekoBot import OWNER_ID, DEV_USERS
-from YumekoBot import TEMP_DOWNLOAD_DIRECTORY as path
-from YumekoBot import TEMP_DOWNLOAD_DIRECTORY
+from Yumeko import OWNER_ID, DEV_USERS
+from Yumeko import TEMP_DOWNLOAD_DIRECTORY as path
+from Yumeko import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
 water = './Yumeko/resources/yone.jpg'
 client = tbot
