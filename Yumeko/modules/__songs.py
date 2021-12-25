@@ -6,8 +6,8 @@ import requests
 import wget
 from pyrogram import filters
 
-from YumekoBot import pbot as Jebot
-from YumekoBot.pyrogramee.dark import get_arg
+from Yumeko import pbot as Jebot
+from Yumeko.pyrogramee.dark import get_arg
 
 
 @Jebot.on_message(filters.command("saavn"))
@@ -44,7 +44,7 @@ import os
 import aiofiles
 import aiohttp
 from pyrogram import filters
-from lunaBot import pbot as luna
+from Yumeko import pbot as luna
 
 ARQ = "https://thearq.tech/"
 
@@ -98,7 +98,7 @@ import os
 import aiofiles
 import aiohttp
 from pyrogram import filters
-from lunaBot import pbot as ASUNA
+from Yumeko import pbot as ASUNA
 
 ARQ = "https://thearq.tech/"
 
@@ -122,7 +122,7 @@ async def download_song(url):
     return song_name
 
 
-@luna.on_message(filters.command("deezer"))
+@Yumeko.on_message(filters.command("deezer"))
 async def deezer(_, message):
     if len(message.command) < 2:
         await message.reply_text("Download Now Deezer")
