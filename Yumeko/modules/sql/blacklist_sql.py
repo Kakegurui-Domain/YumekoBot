@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import func, distinct, Column, String, UnicodeText, BigInteger
 
-from lunaBot.modules.sql import SESSION, BASE
+from Yumeko.modules.sql import SESSION, BASE
 
 
 class BlackListFilters(BASE):
