@@ -13,9 +13,9 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler, JobQueue, run_async
     from telegram.utils.helpers import escape_markdown
 
-    from YumekoBot import EVENT_LOGS, LOGGER, dispatcher
-    from YumekoBot.modules.helper_funcs.chat_status import user_admin
-    from YumekoBot.modules.sql import log_channel_sql as sql
+    from Yumeko import EVENT_LOGS, LOGGER, dispatcher
+    from Yumeko.modules.helper_funcs.chat_status import user_admin
+    from Yumeko.modules.sql import log_channel_sql as sql
 
     def loggable(func):
         @wraps(func)
