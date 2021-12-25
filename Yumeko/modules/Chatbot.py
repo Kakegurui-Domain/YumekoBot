@@ -19,10 +19,10 @@ import re
 import aiohttp
 from googletrans import Translator as google_translator
 from pyrogram import filters
-from lunaBot import BOT_ID, arq
-from lunaBot.helper_extra.aichat import add_chat, get_session, remove_chat
-from lunaBot.pyrogramee.pluginshelper import admins_only, edit_or_reply
-from lunaBot.pyrogramee.pyrogram import pbot as luna
+from YumekoBot import BOT_ID, arq
+from YumekoBot.helper_extra.aichat import add_chat, get_session, remove_chat
+from YumekoBot.pyrogramee.pluginshelper import admins_only, edit_or_reply
+from YumekoBot.pyrogramee.pyrogram import pbot as luna
 
 translator = google_translator()
 
