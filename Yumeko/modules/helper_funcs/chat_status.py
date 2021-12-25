@@ -2,7 +2,7 @@ from time import perf_counter
 from functools import wraps
 from cachetools import TTLCache
 from threading import RLock
-from lunaBot import (
+from Yumeko import (
     DEL_CMDS,
     DEV_USERS,
     DRAGONS,
@@ -139,7 +139,7 @@ def sudo_plus(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "Who dis non-admin telling me what to do? You want a punch?"
+                "Baka, who dis non-admin telling me what to do?"
             )
 
     return is_sudo_plus_func
@@ -200,7 +200,7 @@ def user_admin(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "Who dis non-admin telling me what to do? You want a punch?"
+                "Who dis non-admin telling me what to do? Baka"
             )
 
     return is_admin
@@ -252,7 +252,7 @@ def bot_admin(func):
         message_chat_title = update.effective_message.chat.title
 
         if update_chat_title == message_chat_title:
-            not_admin = "I'm not admin! - REEEEEE"
+            not_admin = "I'm not admin! - -_-REEE"
         else:
             not_admin = f"I'm not admin in <b>{update_chat_title}</b>! - REEEEEE"
 
@@ -366,7 +366,7 @@ def user_can_ban(func):
             and user not in [777000, 1087968824]
         ):
             update.effective_message.reply_text(
-                "😹 Sorry You can't do that"
+                "Baka, Sorry You can't do that"
             )
             return ""
         return func(update, context, *args, **kwargs)
