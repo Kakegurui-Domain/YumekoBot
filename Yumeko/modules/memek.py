@@ -1,6 +1,6 @@
 from aiohttp import ClientSession
 from Python_ARQ import ARQ
-from YumekoBot import ARQ_API_KEY
+from Yumeko import ARQ_API_KEY
 
 ARQ_API_URL = "https://thearq.tech"
 
