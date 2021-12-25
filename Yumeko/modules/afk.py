@@ -1,12 +1,12 @@
 import random, html
 
-from lunaBot import dispatcher
+from YumekoBot import dispatcher
 from lunaBot.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from lunaBot.modules.sql import afk_sql as sql
-from lunaBot.modules.users import get_user_id
+from YumekoBot.modules.sql import afk_sql as sql
+from YumekoBot.modules.users import get_user_id
 from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler, run_async
