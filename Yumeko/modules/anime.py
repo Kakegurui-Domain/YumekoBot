@@ -5,8 +5,8 @@ import textwrap
 import bs4
 import jikanpy
 import requests
-from YumekoBot import DEV_USERS, OWNER_ID, DRAGONS, dispatcher
-from YumekoBot.modules.disable import DisableAbleCommandHandler
+from Yumeko import DEV_USERS, OWNER_ID, DRAGONS, dispatcher
+from Yumeko.modules.disable import DisableAbleCommandHandler
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
