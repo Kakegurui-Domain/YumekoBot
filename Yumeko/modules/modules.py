@@ -1,8 +1,8 @@
 import importlib
 import collections
 
-from YumekoBot import dispatcher, telethn
-from YumekoBot.__main__ import (
+from Yumeko import dispatcher, telethn
+from Yumeko.__main__ import (
     CHAT_SETTINGS,
     DATA_EXPORT,
     DATA_IMPORT,
@@ -13,7 +13,7 @@ from YumekoBot.__main__ import (
     USER_INFO,
     USER_SETTINGS,
 )
-from YumekoBot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from Yumeko.modules.helper_funcs.chat_status import dev_plus, sudo_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
