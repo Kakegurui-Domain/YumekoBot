@@ -1,7 +1,7 @@
 import traceback
 
-from YumekoBot import pbot as app
-from YumekoBot.utils.inlinefuncs import *
+from Yumeko import pbot as app
+from Yumeko.utils.inlinefuncs import *
 
 __mod_name__ = "Inline"
 __help__ = """
