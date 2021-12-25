@@ -6,8 +6,8 @@ import time
 import uuid
 from io import BytesIO
 
-import YumekoBot.modules.sql.feds_sql as sql
-from YumekoBot import (
+import Yumeko.modules.sql.feds_sql as sql
+from Yumeko import (
     EVENT_LOGS,
     LOGGER,
     SUPPORT_CHAT,
@@ -17,10 +17,10 @@ from YumekoBot import (
     WOLVES,
     dispatcher,
 )
-from YumekoBot.modules.disable import DisableAbleCommandHandler
-from YumekoBot.modules.helper_funcs.alternate import send_message
-from YumekoBot.modules.helper_funcs.chat_status import is_user_admin
-from YumekoBot.modules.helper_funcs.extraction import (
+from Yumeko.modules.disable import DisableAbleCommandHandler
+from Yumeko.modules.helper_funcs.alternate import send_message
+from Yumeko.modules.helper_funcs.chat_status import is_user_admin
+from Yumeko.modules.helper_funcs.extraction import (
     extract_unt_fedban,
     extract_user,
     extract_user_fban,
