@@ -5,9 +5,9 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from YumekoBot import StartTime, dispatcher
-from YumekoBot.modules.helper_funcs.chat_status import sudo_plus
-from YumekoBot.modules.disable import DisableAbleCommandHandler
+from Yumeko import StartTime, dispatcher
+from Yumeko.modules.helper_funcs.chat_status import sudo_plus
+from Yumeko.modules.disable import DisableAbleCommandHandler
 
 sites_list = {
     "Telegram": "https://api.telegram.org",
