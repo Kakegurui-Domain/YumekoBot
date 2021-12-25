@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import YumekoBot.modules.sql.notes_sql as sql
-from YumekoBot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
-from YumekoBot.__main__ import DATA_IMPORT
-from YumekoBot.modules.helper_funcs.chat_status import user_admin
-from YumekoBot.modules.helper_funcs.alternate import typing_action
+import Yumeko.modules.sql.notes_sql as sql
+from Yumeko import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
+from Yumeko.__main__ import DATA_IMPORT
+from Yumeko.modules.helper_funcs.chat_status import user_admin
+from Yumeko.modules.helper_funcs.alternate import typing_action
 
-# from YumekoBot.modules.rules import get_rules
-import YumekoBot.modules.sql.rules_sql as rulessql
+# from Yumeko.modules.rules import get_rules
+import Yumeko.modules.sql.rules_sql as rulessql
 
-# from YumekoBot.modules.sql import warns_sql as warnssql
-import YumekoBot.modules.sql.blacklist_sql as blacklistsql
-from YumekoBot.modules.sql import disable_sql as disabledsql
+# from Yumeko.modules.sql import warns_sql as warnssql
+import Yumeko.modules.sql.blacklist_sql as blacklistsql
+from Yumeko.modules.sql import disable_sql as disabledsql
 
-# from YumekoBot.modules.sql import cust_filters_sql as filtersql
-# import YumekoBot.modules.sql.welcome_sql as welcsql
-import YumekoBot.modules.sql.locks_sql as locksql
-from YumekoBot.modules.connection import connected
+# from Yumeko.modules.sql import cust_filters_sql as filtersql
+# import Yumeko.modules.sql.welcome_sql as welcsql
+import Yumeko.modules.sql.locks_sql as locksql
+from Yumeko.modules.connection import connected
 
 
 @run_async
