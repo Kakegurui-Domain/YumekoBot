@@ -6,8 +6,8 @@ import time
 import uuid
 from io import BytesIO
 
-import lunaBot.modules.sql.feds_sql as sql
-from lunaBot import (
+import YumekoBot.modules.sql.feds_sql as sql
+from YumekoBot import (
     EVENT_LOGS,
     LOGGER,
     SUPPORT_CHAT,
@@ -17,15 +17,15 @@ from lunaBot import (
     WOLVES,
     dispatcher,
 )
-from lunaBot.modules.disable import DisableAbleCommandHandler
-from lunaBot.modules.helper_funcs.alternate import send_message
-from lunaBot.modules.helper_funcs.chat_status import is_user_admin
-from lunaBot.modules.helper_funcs.extraction import (
+from YumekoBot.modules.disable import DisableAbleCommandHandler
+from YumekoBot.modules.helper_funcs.alternate import send_message
+from YumekoBot.modules.helper_funcs.chat_status import is_user_admin
+from YumekoBot.modules.helper_funcs.extraction import (
     extract_unt_fedban,
     extract_user,
     extract_user_fban,
 )
-from lunaBot.modules.helper_funcs.string_handling import markdown_parser
+from YumekoBot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
