@@ -4,7 +4,7 @@ from typing import Union
 
 from sqlalchemy import Column, String, Boolean, UnicodeText, BigInteger
 
-from lunaBot.modules.sql import SESSION, BASE
+from Yumeko.modules.sql import SESSION, BASE
 
 
 class ChatAccessConnectionSettings(BASE):
