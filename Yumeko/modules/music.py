@@ -10,11 +10,11 @@ import ffmpeg
 import youtube_dl
 from pyrogram import filters
 
-from lunaBot import aiohttpsession as session
-from lunaBot.modules.memek import arq
-from lunaBot import pbot as app
-from lunaBot.utils.errors import capture_err
-from lunaBot.utils.pastebin import paste
+from Yumeko import aiohttpsession as session
+from Yumeko.modules.memek import arq
+from Yumeko import pbot as app
+from Yumeko.utils.errors import capture_err
+from Yumeko.utils.pastebin import paste
 
 __mod_name__ = "Media"
 
