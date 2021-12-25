@@ -28,18 +28,18 @@ from telethon.tl.types import ChatBannedRights
 from YumekoBot import BOT_ID
 from YumekoBot.conf import get_int_key, get_str_key
 
-# from lunaBot.db.mongo_helpers.nsfw_guard import add_chat, get_all_nsfw_chats, is_chat_in_db, rm_chat
-from YumekoBot.pyrogramee.telethonbasics import is_admin
-from YumekoBot.events import register
-from YumekoBot import MONGO_DB_URI 
+# from Yumeko.db.mongo_helpers.nsfw_guard import add_chat, get_all_nsfw_chats, is_chat_in_db, rm_chat
+from Yumeko.pyrogramee.telethonbasics import is_admin
+from Yumeko.events import register
+from Yumeko import MONGO_DB_URI 
 from pymongo import MongoClient
-from lunaBot.modules.sql_extended.nsfw_watch_sql import (
+from Yumeko.modules.sql_extended.nsfw_watch_sql import (
     add_nsfwatch,
     get_all_nsfw_enabled_chat,
     is_nsfwatch_indb,
     rmnsfwatch,
 )
-from lunaBot import telethn as tbot
+from Yumeko import telethn as tbot
 
 translator = google_translator()
 MUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=False)
