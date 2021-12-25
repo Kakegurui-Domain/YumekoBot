@@ -114,7 +114,7 @@ async def zombies(event):
     
     
 from telethon.tl.types import UserStatusLastMonth, UserStatusLastWeek, ChatBannedRights
-from lunaBot.events import register
+from Yumeko.events import register
 from telethon import *
 from telethon.tl.functions.channels import (EditBannedRequest)
                                             
