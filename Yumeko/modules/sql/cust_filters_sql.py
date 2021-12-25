@@ -2,8 +2,8 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, Boolean, BigInteger, distinct, func
 
-from lunaBot.modules.helper_funcs.msg_types import Types
-from lunaBot.modules.sql import BASE, SESSION
+from Yumeko.modules.helper_funcs.msg_types import Types
+from Yumeko.modules.sql import BASE, SESSION
 
 
 class CustomFilters(BASE):
