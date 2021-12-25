@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import String, Column, BigInteger, UnicodeText
 
-from lunaBot.modules.sql import SESSION, BASE
+from Yumeko.modules.sql import SESSION, BASE
 
 DEF_COUNT = 1
 DEF_LIMIT = 0
