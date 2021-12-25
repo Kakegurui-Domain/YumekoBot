@@ -25,13 +25,13 @@ from google_trans_new import google_translator
 from telethon import events
 from telethon.tl.types import ChatBannedRights
 
-from lunaBot import BOT_ID
-from lunaBot.conf import get_int_key, get_str_key
+from YumekoBot import BOT_ID
+from YumekoBot.conf import get_int_key, get_str_key
 
 # from lunaBot.db.mongo_helpers.nsfw_guard import add_chat, get_all_nsfw_chats, is_chat_in_db, rm_chat
-from lunaBot.pyrogramee.telethonbasics import is_admin
-from lunaBot.events import register
-from lunaBot import MONGO_DB_URI 
+from YumekoBot.pyrogramee.telethonbasics import is_admin
+from YumekoBot.events import register
+from YumekoBot import MONGO_DB_URI 
 from pymongo import MongoClient
 from lunaBot.modules.sql_extended.nsfw_watch_sql import (
     add_nsfwatch,
