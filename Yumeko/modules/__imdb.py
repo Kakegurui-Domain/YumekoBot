@@ -1,11 +1,11 @@
-from YumekoBot import telethn as tbot
+from Yumeko import telethn as tbot
 import os
 import re
 import bs4
 import requests
 from telethon import types
 from telethon.tl import functions
-from YumekoBot.events import register
+from Yumeko.events import register
 
 langi = "en"
 
