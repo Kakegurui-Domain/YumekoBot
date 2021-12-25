@@ -13,7 +13,7 @@ from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from lunaBot import (
+from Yumeko import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
