@@ -1,12 +1,12 @@
-from YumekoBot import dispatcher
-from YumekoBot.modules.helper_funcs.chat_status import (
+from Yumeko import dispatcher
+from Yumeko.modules.helper_funcs.chat_status import (
     bot_admin,
     is_bot_admin,
     is_user_ban_protected,
     is_user_in_chat,
 )
-from YumekoBot.modules.helper_funcs.extraction import extract_user_and_text
-from YumekoBot.modules.helper_funcs.filters import CustomFilters
+from Yumeko.modules.helper_funcs.extraction import extract_user_and_text
+from Yumeko.modules.helper_funcs.filters import CustomFilters
 from telegram import Update, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
