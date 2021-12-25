@@ -1,7 +1,7 @@
 # Module to blacklist users and prevent them from using commands by @TheRealPhoenix
 import html
-import lunaBot.modules.sql.blacklistusers_sql as sql
-from lunaBot import (
+import YumekoBot.modules.sql.blacklistusers_sql as sql
+from YumekoBot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -10,12 +10,12 @@ from lunaBot import (
     WOLVES,
     dispatcher,
 )
-from lunaBot.modules.helper_funcs.chat_status import dev_plus
-from lunaBot.modules.helper_funcs.extraction import (
+from YumekoBot.modules.helper_funcs.chat_status import dev_plus
+from YumekoBot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from lunaBot.modules.log_channel import gloggable
+from YumekoBot.modules.log_channel import gloggable
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
