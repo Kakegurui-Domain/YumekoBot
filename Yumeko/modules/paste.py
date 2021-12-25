@@ -7,10 +7,10 @@ from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton
 
-from lunaBot import aiohttpsession as session
-from lunaBot import pbot as app
-from lunaBot.utils.errors import capture_err
-from lunaBot.utils.pastebin import paste
+from YumekoBot import aiohttpsession as session
+from YumekoBot import pbot as app
+from YumekoBot.utils.errors import capture_err
+from YumekoBot.utils.pastebin import paste
 
 __mod_name__ = "Paste"
 
