@@ -1,4 +1,4 @@
-from lunaBot.mongo import db
+from Yumeko.mongo import db
 from typing import Dict, List, Union
 
 
