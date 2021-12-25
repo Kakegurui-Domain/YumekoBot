@@ -15,8 +15,8 @@ from YumekoBot import (
     WOLVES,
     dispatcher,
 )
-from YumekoBot.modules.disable import DisableAbleCommandHandler
-from YumekoBot.modules.helper_funcs.chat_status import (
+from Yumeko.modules.disable import DisableAbleCommandHandler
+from Yumeko.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
@@ -27,9 +27,9 @@ from YumekoBot.modules.helper_funcs.chat_status import (
     user_can_ban,
     can_delete,
 )
-from YumekoBot.modules.helper_funcs.extraction import extract_user_and_text
-from YumekoBot.modules.helper_funcs.string_handling import extract_time
-from YumekoBot.modules.log_channel import gloggable, loggable
+from Yumeko.modules.helper_funcs.extraction import extract_user_and_text
+from Yumeko.modules.helper_funcs.string_handling import extract_time
+from Yumeko.modules.log_channel import gloggable, loggable
 
 
 @run_async
