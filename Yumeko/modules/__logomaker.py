@@ -11,9 +11,9 @@ from io import BytesIO
 from requests import get
 from telethon.tl.types import InputMessagesFilterPhotos
 
-from YumekoBot import OWNER_ID, BOT_USERNAME, SUPPORT_CHAT
-from YumekoBot.events import register
-from YumekoBot import telethn
+from Yumeko import OWNER_ID, BOT_USERNAME, SUPPORT_CHAT
+from Yumeko.events import register
+from Yumeko import telethn
 from PIL import Image, ImageDraw, ImageFont
 
 
