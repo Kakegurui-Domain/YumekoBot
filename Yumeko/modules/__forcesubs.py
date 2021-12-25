@@ -12,9 +12,9 @@ from pyrogram.errors.exceptions.bad_request_400 import (
 )
 from pyrogram.types import ChatPermissions, InlineKeyboardButton, InlineKeyboardMarkup
 
-from lunaBot import DRAGONS as SUDO_USERS
-from lunaBot import pbot
-from lunaBot.modules.sql_extended import forceSubscribe_sql as sql
+from YumekoBot import DRAGONS as SUDO_USERS
+from YumekoBot import pbot
+from YumekoBot.modules.sql_extended import forceSubscribe_sql as sql
 
 logging.basicConfig(level=logging.INFO)
 
