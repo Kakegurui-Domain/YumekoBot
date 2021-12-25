@@ -4,8 +4,8 @@ import os
 from telethon import events, Button
 from telethon import __version__ as tlhver
 from pyrogram import __version__ as pyrover
-from YumekoBot.events import register as MEMEK
-from YumekoBot import telethn as tbot
+from Yumeko.events import register as MEMEK
+from Yumeko import telethn as tbot
 
 PHOTO = "https://telegra.ph/file/7c3c26e0ed938aec91209.jpg"
 
