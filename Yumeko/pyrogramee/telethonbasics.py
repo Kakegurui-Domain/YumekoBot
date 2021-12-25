@@ -2,7 +2,7 @@ import os
 
 from telethon.tl.types import *
 
-from lunaBot.pyrogramee.pluginshelper import runcmd
+from Yumeko.pyrogramee.pluginshelper import runcmd
 
 
 async def convert_to_image(event, borg):
