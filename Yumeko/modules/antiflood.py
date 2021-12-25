@@ -4,15 +4,15 @@ import re
 
 from telegram import Message, Chat, Update, User, ChatPermissions
 
-from lunaBot import TIGERS, WOLVES, dispatcher
-from lunaBot.modules.helper_funcs.chat_status import (
+from YumekoBot import TIGERS, WOLVES, dispatcher
+from YumekoBot.modules.helper_funcs.chat_status import (
     bot_admin,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from lunaBot.modules.log_channel import loggable
-from lunaBot.modules.sql import antiflood_sql as sql
+from YumekoBot.modules.log_channel import loggable
+from YumekoBot.modules.sql import antiflood_sql as sql
 from telegram.error import BadRequest
 from telegram.ext import (
     CallbackContext,
@@ -23,10 +23,10 @@ from telegram.ext import (
     run_async,
 )
 from telegram.utils.helpers import mention_html, escape_markdown
-from lunaBot.modules.helper_funcs.string_handling import extract_time
-from lunaBot.modules.connection import connected
-from lunaBot.modules.helper_funcs.alternate import send_message
-from lunaBot.modules.sql.approve_sql import is_approved
+from YumekoBot.modules.helper_funcs.string_handling import extract_time
+from YumekoBot.modules.connection import connected
+from YumekoBot.modules.helper_funcs.alternate import send_message
+from YumekoBot.modules.sql.approve_sql import is_approved
 
 FLOOD_GROUP = 3
 
