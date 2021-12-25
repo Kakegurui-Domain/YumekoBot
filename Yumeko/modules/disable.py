@@ -2,9 +2,9 @@ import importlib
 from typing import Union
 
 from future.utils import string_types
-from lunaBot import dispatcher
-from lunaBot.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
-from lunaBot.modules.helper_funcs.misc import is_module_loaded
+from Yumeko import dispatcher
+from Yumeko.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
+from Yumeko.modules.helper_funcs.misc import is_module_loaded
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,
