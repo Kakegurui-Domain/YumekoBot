@@ -2,13 +2,13 @@ import html
 import random
 import time
 
-import YumekoBot.modules.fun_strings as fun_strings
-from YumekoBot import dispatcher
-from YumekoBot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
-from YumekoBot.modules.helper_funcs.chat_status import is_user_admin
-from YumekoBot.modules.helper_funcs.alternate import typing_action
-from YumekoBot.modules.helper_funcs.filters import CustomFilters
-from YumekoBot.modules.helper_funcs.extraction import extract_user
+import Yumeko.modules.fun_strings as fun_strings
+from Yumeko import dispatcher
+from Yumeko.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
+from Yumeko.modules.helper_funcs.chat_status import is_user_admin
+from Yumeko.modules.helper_funcs.alternate import typing_action
+from Yumeko.modules.helper_funcs.filters import CustomFilters
+from Yumeko.modules.helper_funcs.extraction import extract_user
 from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, run_async, CommandHandler, Filters
