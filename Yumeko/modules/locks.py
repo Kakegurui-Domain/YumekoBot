@@ -9,20 +9,20 @@ from telegram.utils.helpers import mention_html
 
 from alphabet_detector import AlphabetDetector
 
-import YumekoBot.modules.sql.locks_sql as sql
-from YumekoBot import dispatcher, DRAGONS, LOGGER
-from YumekoBot.modules.disable import DisableAbleCommandHandler
-from YumekoBot.modules.helper_funcs.chat_status import (
+import Yumeko.modules.sql.locks_sql as sql
+from Yumeko import dispatcher, DRAGONS, LOGGER
+from Yumeko.modules.disable import DisableAbleCommandHandler
+from Yumeko.modules.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
     user_not_admin,
     is_bot_admin,
     user_admin,
 )
-from YumekoBot.modules.log_channel import loggable
-from YumekoBot.modules.connection import connected
-from YumekoBot.modules.sql.approve_sql import is_approved
-from YumekoBot.modules.helper_funcs.alternate import send_message, typing_action
+from Yumeko.modules.log_channel import loggable
+from Yumeko.modules.connection import connected
+from Yumeko.modules.sql.approve_sql import is_approved
+from Yumeko.modules.helper_funcs.alternate import send_message, typing_action
 
 ad = AlphabetDetector()
 
