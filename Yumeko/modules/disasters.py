@@ -3,7 +3,7 @@ import json
 import os
 from typing import Optional
 
-from lunaBot import (
+from Yumeko import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -13,13 +13,13 @@ from lunaBot import (
     WOLVES,
     dispatcher,
 )
-from lunaBot.modules.helper_funcs.chat_status import (
+from Yumeko.modules.helper_funcs.chat_status import (
     dev_plus,
     sudo_plus,
     whitelist_plus,
 )
-from lunaBot.modules.helper_funcs.extraction import extract_user
-from lunaBot.modules.log_channel import gloggable
+from Yumeko.modules.helper_funcs.extraction import extract_user
+from Yumeko.modules.log_channel import gloggable
 from telegram import ParseMode, TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
