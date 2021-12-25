@@ -23,7 +23,7 @@ SOFTWARE.
 """
 from asyncio import gather
 
-from lunaBot import aiohttpsession as session
+from Yumeko import aiohttpsession as session
 
 
 async def get(url: str, *args, **kwargs):
