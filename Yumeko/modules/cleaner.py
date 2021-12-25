@@ -1,15 +1,15 @@
 
 import html
 
-from YumekoBot import ALLOW_EXCL, CustomCommandHandler, dispatcher
-from YumekoBot.modules.disable import DisableAbleCommandHandler
-from YumekoBot.modules.helper_funcs.chat_status import (
+from Yumeko import ALLOW_EXCL, CustomCommandHandler, dispatcher
+from Yumeko.modules.disable import DisableAbleCommandHandler
+from Yumeko.modules.helper_funcs.chat_status import (
     bot_can_delete,
     connection_status,
     dev_plus,
     user_admin,
 )
-from YumekoBot.modules.sql import cleaner_sql as sql
+from Yumeko.modules.sql import cleaner_sql as sql
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,
