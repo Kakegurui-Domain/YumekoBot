@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import lunaBot.modules.sql.notes_sql as sql
-from lunaBot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
-from lunaBot.__main__ import DATA_IMPORT
-from lunaBot.modules.helper_funcs.chat_status import user_admin
-from lunaBot.modules.helper_funcs.alternate import typing_action
+import YumekoBot.modules.sql.notes_sql as sql
+from YumekoBot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
+from YumekoBot.__main__ import DATA_IMPORT
+from YumekoBot.modules.helper_funcs.chat_status import user_admin
+from YumekoBot.modules.helper_funcs.alternate import typing_action
 
-# from lunaBot.modules.rules import get_rules
-import lunaBot.modules.sql.rules_sql as rulessql
+# from YumekoBot.modules.rules import get_rules
+import YumekoBot.modules.sql.rules_sql as rulessql
 
-# from lunaBot.modules.sql import warns_sql as warnssql
-import lunaBot.modules.sql.blacklist_sql as blacklistsql
-from lunaBot.modules.sql import disable_sql as disabledsql
+# from YumekoBot.modules.sql import warns_sql as warnssql
+import YumekoBot.modules.sql.blacklist_sql as blacklistsql
+from YumekoBot.modules.sql import disable_sql as disabledsql
 
-# from lunaBot.modules.sql import cust_filters_sql as filtersql
-# import lunaBot.modules.sql.welcome_sql as welcsql
-import lunaBot.modules.sql.locks_sql as locksql
-from lunaBot.modules.connection import connected
+# from YumekoBot.modules.sql import cust_filters_sql as filtersql
+# import YumekoBot.modules.sql.welcome_sql as welcsql
+import YumekoBot.modules.sql.locks_sql as locksql
+from YumekoBot.modules.connection import connected
 
 
 @run_async
