@@ -1,9 +1,9 @@
 import html
 import random
-import lunaBot.modules.truth_and_dare_string as truth_and_dare_string
-from lunaBot import dispatcher
+import YumekoBot.modules.truth_and_dare_string as truth_and_dare_string
+from YumekoBot import dispatcher
 from telegram import ParseMode, Update, Bot
-from lunaBot.modules.disable import DisableAbleCommandHandler
+from YumekoBot.modules.disable import DisableAbleCommandHandler
 from telegram.ext import CallbackContext, run_async
 
 @run_async
