@@ -5,10 +5,10 @@ import sys
 from contextlib import suppress
 from time import sleep
 
-import lunaBot
+import YumekoBot
 
-from lunaBot import dispatcher
-from lunaBot.modules.helper_funcs.chat_status import dev_plus
+from YumekoBot import dispatcher
+from YumekoBot.modules.helper_funcs.chat_status import dev_plus
 from telegram import TelegramError, Update
 from telegram.error import Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, run_async
