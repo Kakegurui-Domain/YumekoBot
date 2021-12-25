@@ -1,5 +1,5 @@
-from lunaBot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
-from lunaBot import DRAGONS
+from Yumeko.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
+from Yumeko import DRAGONS
 from telethon.tl.types import ChannelParticipantsAdmins
 
 
