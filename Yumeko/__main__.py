@@ -25,9 +25,9 @@ from lunaBot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from lunaBot.modules import ALL_MODULES
-from lunaBot.modules.helper_funcs.chat_status import is_user_admin
-from lunaBot.modules.helper_funcs.misc import paginate_modules
+from Yumeko.modules import ALL_MODULES
+from Yumeko.modules.helper_funcs.chat_status import is_user_admin
+from Yumeko.modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -72,10 +72,10 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-LUNA_IMG = "https://telegra.ph/file/7c3c26e0ed938aec91209.jpg"
+YUMEKO_IMG = "https://telegra.ph/file/fbb803ea2af74de745362.jpg"
 
 PM_START_TEXT = """
-**hey I am Luna Robot** [ㅤ](https://telegra.ph/file/1895e25b7f5e3e7bddfc4.jpg)
+**Hey I am Yumeko** [ㅤ]()
 ️➖➖➖➖➖➖➖➖➖➖➖➖➖
 **I'm a Powerfull Group Manager Bot With Cool Modules. feel free to add me to your groups!**
 ️➖➖➖➖➖➖➖➖➖➖➖➖➖
@@ -84,12 +84,12 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="➕ Add Luna To Your group ➕", url="http://t.me/lunatapibot?startgroup=true"),
+        InlineKeyboardButton(text="➕ Add Yumeko To Your group ➕", url="http://t.me/?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="About", callback_data="luna_"),
         InlineKeyboardButton(
-            text="Music Player", callback_data="luna_basichelp"
+            text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/"
         ),
     ],
     [
@@ -101,17 +101,17 @@ buttons = [
 
 
 HELP_STRINGS = """
-**Main commands:**  [ㅤ](https://telegra.ph/file/1895e25b7f5e3e7bddfc4.jpg)
+**Main commands:**  [ㅤ]()
 ❂ /start: Starts me! You've probably already used this.
 ❂ /help: Sends this message; I'll tell you more about myself.
 
 All commands can either be used with / or !.
-If you want to report any bugs or need any help with setting up Alina, reach us at here"""
+If you want to report any bugs or need any help with setting up Yumeko, reach us at here"""
 
 
 
-DONATE_STRING = """Hehe, senang mendengar Anda ingin menyumbang!
- [klick disini](https://t.me/zeinzo_1) ❤️
+DONATE_STRING = """Hehe, baka!!
+ [Is that so!!](https://t.me/Ryu_God) ❤️
 """
 
 IMPORTED = {}
@@ -125,7 +125,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("lunaBot.modules." + module_name)
+    imported_module = importlib.import_module("Yumeko.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -222,12 +222,12 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_photo(
-            LUNA_IMG, caption= "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            YUMEKO_IMG, caption= "Baka, I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/lunaXresso")]]
+                [[InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/")]]
             ),
         )
         
@@ -357,14 +357,14 @@ def help_button(update, context):
 @run_async
 def luna_about_callback(update, context):
     query = update.callback_query
-    if query.data == "luna_":
+    if query.data == "yumeko_":
         query.message.edit_text(
-            text="""Hi again! I'am a full-fledged group management bot built to help you manage your group easily.\n
+            text="""Hi again! I'am an anime themed group management bot built to help you manage your group easily.\n
                     \nI can do lot of stuff, some of them are:
-                    \n• Restrict users who flood your chat using my anti-flood module.
-                    \n• Safeguard your group with the advanced and handy Antispam system.
-                    \n• Greet users with media + text and buttons, with proper formatting.
-                    \n• Save notes and filters with proper formatting and reply markup.\n
+                    \n× Restrict users who flood your chat using my anti-flood module.
+                    \n× Safeguard your group with the advanced and handy Antispam system.
+                    \n× Greet users with media + text and buttons, with proper formatting.
+                    \n× Save notes and filters with proper formatting and reply markup.\n
                     \nNote: I need to be promoted with proper admin permissions to fuction properly.\n
                     \nCheck Setup Guide to learn on setting up the bot and on help to learn more.""",
             parse_mode=ParseMode.MARKDOWN,
@@ -373,17 +373,17 @@ def luna_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Setup Guide", callback_data="luna_aselole"
+                            text="Setup Guide", callback_data="yumeko_setup"
                         ),
                         InlineKeyboardButton(
-                            text="T & C", callback_data="luna_puqi"
+                            text="T & C", callback_data="yumeko_tc"
                         ),
                     ],
-                    [InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="luna_back")],
+                    [InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="yumeko_back")],
                 ]
             ),
         )
-    elif query.data == "luna_back":
+    elif query.data == "yumeko_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -392,7 +392,7 @@ def luna_about_callback(update, context):
                 disable_web_page_preview=False,
         )
 
-    elif query.data == "luna_basichelp":
+    elif query.data == "yumeko_basichelp":
         query.message.edit_text(
             text=f"**──「 Basic Guide 」──**"
             f"\n\n1.) first, add me to your group.\n"
@@ -406,20 +406,20 @@ def luna_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="📗 Basic CMD", callback_data="luna_admin"),
-                    InlineKeyboardButton(text="📘 Advanced CMD", callback_data="luna_notes"),
+                    InlineKeyboardButton(text="📗 Basic CMD", callback_data="yumeko_admin"),
+                    InlineKeyboardButton(text="📘 Advanced CMD", callback_data="yumeko_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="📙 Admin CMD", callback_data="luna_support"),
+                    InlineKeyboardButton(text="📙 Admin CMD", callback_data="yumeko_support"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="luna_back"),
+                    InlineKeyboardButton(text="Back", callback_data="yumeko_back"),
                  
                  ]
                 ]
             ),
         )
-    elif query.data == "luna_admin":
+    elif query.data == "yumeko_admin":
         query.message.edit_text(
             text=f"**──「 Basic Guide 」──**"
             f"\n\n/play (song name) - play song from youtube"
@@ -432,11 +432,11 @@ def luna_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="luna_basichelp")]]
+                [[InlineKeyboardButton(text="Back", callback_data="yumeko_basichelp")]]
             ),
         )
 
-    elif query.data == "luna_notes":
+    elif query.data == "yumeko_notes":
         query.message.edit_text(
             text=f"──「 Advanced CMD 」──\n\n"
             f"/start (in group) - see the bot alive status"
@@ -446,10 +446,10 @@ def luna_about_callback(update, context):
             f"\n/id - show the group/user id & other",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="luna_basichelp")]]
+                [[InlineKeyboardButton(text="Back", callback_data="yumeko_basichelp")]]
             ),
         )
-    elif query.data == "luna_support":
+    elif query.data == "yumeko_support":
         query.message.edit_text(
             text=f"──「 Admin CMD 」──\n"
             f"\n/player - show the music playing status"
@@ -468,36 +468,36 @@ def luna_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="luna_basichelp"),
+                    InlineKeyboardButton(text="Back", callback_data="yumeko_basichelp"),
                  
                  ]
                 ]
             ),
         )
-    elif query.data == "luna_credit":
+    elif query.data == "yumeko_credit":
         query.message.edit_text(
             text=f"<b> `Cʀᴇᴅɪᴛ Fᴏʀ Lᴜɴᴀ Dᴇᴠ's` </b>\n"
-            f"\nHᴇʀᴇ Sᴏᴍᴇ Dᴇᴠᴇʟᴏᴘᴇʀs Hᴇʟᴘɪɴɢ Iɴ Mᴀᴋɪɴɢ Tʜᴇ Lᴜɴᴀ",
+            f"\nHᴇʀᴇ Sᴏᴍᴇ Dᴇᴠᴇʟᴏᴘᴇʀs Hᴇʟᴘɪɴɢ Iɴ Mᴀᴋɪɴɢ Tʜᴇ YUMEKO",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Alina", url="https://t.me/rizexx"),
-                    InlineKeyboardButton(text="Nao", url="https://t.me/xgothboi"),
+                    InlineKeyboardButton(text="亗 ʀʏᴜ", url="https://t.me/Ryu_God"),
+                    InlineKeyboardButton(text="Tarun • [ᴀc͜͡ɢᴄ]", url="https://t.me/TheBlackLinen"),
                  ],
                  [
-                    InlineKeyboardButton(text="Yui", url="https://t.me/Badboyanim"),
-                    InlineKeyboardButton(text="Luna", url="https://t.me/tdrki_1"),
+                    InlineKeyboardButton(text="Bot", url="https://t.me/"),
+                    InlineKeyboardButton(text="Support", url="https://t.me/"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="luna_basichelp"),
+                    InlineKeyboardButton(text="Back", callback_data="yumeko_basichelp"),
                  
                  ]
                 ]
             ),
         )
 
-    elif query.data == "luna_aselole":
+    elif query.data == "yumeko_setup":
         query.message.edit_text(
             text=f"｢ Setup Guide 」\n"
                  f"\nYou can add me to your group by clicking this link and selecting the chat.\n"
@@ -520,26 +520,26 @@ def luna_about_callback(update, context):
             ),
         )
 
-    elif query.data == "luna_asu":
+    elif query.data == "yumeko_del":
         query.message.edit_text(
             text=f"｢ Admin Permissions 」\n"
-                     f"\nTo avoid slowing down, Luna caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the /promote command), Luna will only find out ~10 minutes later.\n"
-                    f"\nIf you want to update them immediately, you can use the /admincache or /reload command, that'll force Luna to check who the admins are again and their permissions\n"
+                     f"\nTo avoid slowing down, Yumeko caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the /promote command), Yumeko will only find out ~10 minutes later.\n"
+                    f"\nIf you want to update them immediately, you can use the /admincache or /reload command, that'll force Yumeko to check who the admins are again and their permissions\n"
                     f"\nIf you are getting a message saying:\nYou must be this chat administrator to perform this action!\n"
-                    f"\nThis has nothing to do with Luna's rights; this is all about YOUR permissions as an admin. Luna respects admin permissions; if you do not have the Ban Users permission as a telegram admin, you won't be able to ban users with Luna. Similarly, to change Luna settings, you need to have the Change group info permission.\n"
-                    f"\nThe message very clearly states that you need these rights - not Luna.",
+                    f"\nThis has nothing to do with Yumeko's rights; this is all about YOUR permissions as an admin. Yumeko respects admin permissions; if you do not have the Ban Users permission as a telegram admin, you won't be able to ban users with Yumeko. Similarly, to change Yumeko settings, you need to have the Change group info permission.\n"
+                    f"\nThe message very clearly states that you need these rights - not Yumeko.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="luna_aselole")]]
+                [[InlineKeyboardButton(text="Back", callback_data="yumeko_setup")]]
             ),
         )
 
-    elif query.data == "luna_asi":
+    elif query.data == "yumeko_luv":
         query.message.edit_text(
             text=f"｢ Anti-Spam Settings 」\n"
                      f"\nAntispam: "
-                     f"\nBy enabling this, you can protect your groups free from scammers/spammers.\nRun /antispam on in your chat to enable.\nAppeal Chat: @lunaXresso\n"
+                     f"\nBy enabling this, you can protect your groups free from scammers/spammers.\nRun /antispam on in your chat to enable.\nAppeal Chat: @\n"
                      f"\n✪ Anti-Flood allows you to keep your chat clean from flooding."
                      f"\n✪ With the help of Blaclists you can blacklist words,sentences and stickers which you don't want to be used by group members."
                      f"\n✪ By enabling Reports, admins get notified when users reports in chat."
@@ -549,18 +549,18 @@ def luna_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="luna_aselole")]]
+                [[InlineKeyboardButton(text="Back", callback_data="yumeko_setup")]]
             ),
         )
 
-    elif query.data == "luna_puqi":
+    elif query.data == "yumeko_lub":
         query.message.edit_text(
             text=f" ｢ Terms and Conditions 」\n"
                 f"\nTo use this bot, You need to agree with Terms and Conditions.\n"
                 f"\n✪ If someone is spamming your group, you can use report feature from your Telegram Client."
                 f"\n✪ Make sure antiflood is enabled, so that users cannot flood/spam your chat."
                 f"\n✪ Do not spam commands, buttons, or anything in bot PM, else you will be Ignored by bot or Gbanned."
-                f"\n✪ If you need to ask anything about this bot or you need help, reach us at @lunaXresso"
+                f"\n✪ If you need to ask anything about this bot or you need help, reach us at @"
                 f"\n✪ Make sure you read rules and follow them when you join Support Chat."
                 f"\n✪ Spamming in Support Chat, will reward you GBAN and reported to Telegram as well.\n"
                 f"\nTerms & Conditions can be changed anytime.",
@@ -569,17 +569,17 @@ def luna_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                     InlineKeyboardButton(text="Credits", callback_data="luna_angjay"),
-                     InlineKeyboardButton(text="Back", callback_data="luna_"),
+                     InlineKeyboardButton(text="Credits", callback_data="yumeko_lic"),
+                     InlineKeyboardButton(text="Back", callback_data="help_back"),
                   ]
                 ]
             ),
         )
 
-    elif query.data == "luna_angjay":
+    elif query.data == "yumeko_lic":
         query.message.edit_text(
-            text=f"Luna is a powerful bot for managing groups with additional features.\n"
-              f"\nLuna's Licensed Under The GNU (General Public License v3.0)\n"
+            text=f"Yumeko is a powerful bot for managing groups with additional features.\n"
+              f"\nYumeko's Licensed Under The GNU (General Public License v3.0)\n"
               f"\nIf you have any question about Luna,"
               f"\nreach us at Support Chat.",
             parse_mode=ParseMode.MARKDOWN,
@@ -587,8 +587,8 @@ def luna_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                     InlineKeyboardButton(text="Back", callback_data="luna_puqi"),
-                     InlineKeyboardButton(text="☎️ Support", url=f"https://t.me/lunaXresso"),
+                     InlineKeyboardButton(text="Back", callback_data="yumeko_lub"),
+                     InlineKeyboardButton(text="☎️ Support", url=f"https://t.me/"),
                   ]
                 ]
             ),
@@ -901,7 +901,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I Aᴍ Aʟɪᴠᴇ 🔥")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I Aᴍ Aʟɪᴠᴇ")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
