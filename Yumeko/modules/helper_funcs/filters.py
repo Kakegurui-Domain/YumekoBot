@@ -1,4 +1,4 @@
-from lunaBot import DEV_USERS, DRAGONS, DEMONS
+from Yumeko import DEV_USERS, DRAGONS, DEMONS
 from telegram import Message
 from telegram.ext import BaseFilter
 
