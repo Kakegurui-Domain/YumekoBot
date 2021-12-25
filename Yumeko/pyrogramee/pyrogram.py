@@ -3,7 +3,7 @@ import logging
 from pyrogram import Client
 
 # from pyromod import listen
-from lunaBot.conf import get_int_key, get_str_key
+from Yumeko.conf import get_int_key, get_str_key
 
 TOKEN = get_str_key("TOKEN", required=True)
 APP_ID = get_int_key("API_ID", required=True)
