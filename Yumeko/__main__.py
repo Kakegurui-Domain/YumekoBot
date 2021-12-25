@@ -87,7 +87,7 @@ buttons = [
         InlineKeyboardButton(text="➕ Add Yumeko To Your group ➕", url="http://t.me/?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="About", callback_data="luna_"),
+        InlineKeyboardButton(text="About", callback_data="yumeko_"),
         InlineKeyboardButton(
             text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/"
         ),
