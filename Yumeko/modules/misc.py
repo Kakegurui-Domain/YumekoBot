@@ -1,6 +1,6 @@
-from YumekoBot.modules.helper_funcs.chat_status import user_admin
-from YumekoBot.modules.disable import DisableAbleCommandHandler
-from YumekoBot import dispatcher
+from Yumeko.modules.helper_funcs.chat_status import user_admin
+from Yumeko.modules.disable import DisableAbleCommandHandler
+from Yumeko import dispatcher
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram import ParseMode, Update
