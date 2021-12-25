@@ -1,12 +1,12 @@
 import os
 
-from YumekoBot.modules.sql_extended.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
+from Yumeko.modules.sql_extended.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
 from telethon.tl.types import ChatBannedRights
 from apscheduler.schedulers.asyncio import AsyncIOScheduler 
 from telethon import functions
-from YumekoBot.events import register
-from YumekoBot import OWNER_ID
-from YumekoBot import telethn as tbot
+from Yumeko.events import register
+from Yumeko import OWNER_ID
+from Yumeko import telethn as tbot
 from telethon import *
 from telethon import Button, custom, events
 
