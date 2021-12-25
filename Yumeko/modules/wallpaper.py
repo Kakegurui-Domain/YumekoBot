@@ -1,8 +1,8 @@
 from random import randint
 
 import requests as r
-from lunaBot import SUPPORT_CHAT, WALL_API, dispatcher
-from lunaBot.modules.disable import DisableAbleCommandHandler
+from YumekoBot import SUPPORT_CHAT, WALL_API, dispatcher
+from YumekoBot.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
