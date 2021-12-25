@@ -27,17 +27,17 @@ from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
                             InputTextMessageContent)
 from search_engine_parser import GoogleSearch
 
-from lunaBot import DEV_USERS
-from lunaBot import LOG_GROUP_ID
-from lunaBot import pbot as app 
-from lunaBot.modules.memek import arq
-from lunaBot.core.keyboard import ikb
-from lunaBot.core.tasks import _get_tasks_text, all_tasks, rm_task
-from lunaBot.core.types import InlineQueryResultCachedDocument
-from lunaBot.modules.info import get_chat_info, get_user_info
-from lunaBot.modules.music import download_youtube_audio
-from lunaBot.utils.functions import test_speedtest
-from lunaBot.utils.pastebin import paste
+from Yumeko import DEV_USERS
+from Yumeko import LOG_GROUP_ID
+from Yumeko import pbot as app 
+from Yumeko.modules.memek import arq
+from Yumeko.core.keyboard import ikb
+from Yumeko.core.tasks import _get_tasks_text, all_tasks, rm_task
+from Yumeko.core.types import InlineQueryResultCachedDocument
+from Yumeko.modules.info import get_chat_info, get_user_info
+from Yumeko.modules.music import download_youtube_audio
+from Yumeko.utils.functions import test_speedtest
+from Yumeko.utils.pastebin import paste
 
 MESSAGE_DUMP_CHAT = LOG_GROUP_ID
 
@@ -101,20 +101,20 @@ async def alive_function(answers):
     )
 
     msg = f"""
-**[Luna❤️](https://t.me/lunatapibot):**
+**[Yumeko](https://t.me/):**
 **RoBot:** `{bot_state}`
 **UserBot:** `Alive`
 **Python:** `{pyver.split()[0]}`
 **Pyrogram:** `{pyrover}`
 **MongoDB:** `{mongover}`
 **Platform:** `{sys.platform}`
-**Profiles:** [BOT](https://t.me/lunatapibot) | [UBOT](https://t.me/tdrki_1)
+**Profiles:** [BOT](https://t.me/) | [UBOT](https://t.me/Ryu_God)
 """
     answers.append(
         InlineQueryResultArticle(
             title="Alive",
-            description="Check Luna Stats",
-            thumb_url="https://telegra.ph/file/a03660425cd749faf0a4a.jpg",
+            description="Check Yumeko Stats",
+            thumb_url="https://telegra.ph/file/fbb803ea2af74de745362.jpg",
             input_message_content=InputTextMessageContent(
                 msg, disable_web_page_preview=True
             ),
@@ -128,20 +128,20 @@ async def about_function(answers):
     buttons = InlineKeyboard(row_width=2)
     bot_state = "Dead" if not await app.get_me() else "About"
     buttons.add(
-        InlineKeyboardButton("Support", url=f"https://t.me/lunaXresso"),
-        InlineKeyboardButton("Channel", url=f"https://t.me/zeinproject"),
+        InlineKeyboardButton("Support", url=f"https://t.me/"),
+        InlineKeyboardButton("Channel", url=f"https://t.me/"),
     )
 
     msg = f"""
-[Luna ✨](https://t.me/lunatapibot) 
-   Maintained by [X](t.me/tdrki_1)
+[Yumeko✨](https://t.me/) 
+   Maintained by [X](t.me/Ryu_God) [Y](t.me/TheBlacklinen) 
 Built with using python-telegram-bot v13.7 Running on Python 3.9.7
 """
     answers.append(
         InlineQueryResultArticle(
             title="About",
-            description="About Luna",
-            thumb_url="https://telegra.ph/file/a03660425cd749faf0a4a.jpg",
+            description="About Yumeko",
+            thumb_url="https://telegra.ph/file/fbb803ea2af74de745362.jpg",
             input_message_content=InputTextMessageContent(
                 msg, disable_web_page_preview=True
             ),
