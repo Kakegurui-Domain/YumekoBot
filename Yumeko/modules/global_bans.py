@@ -14,9 +14,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import YumekoBot.modules.sql.global_bans_sql as sql
-from YumekoBot.modules.sql.users_sql import get_user_com_chats
-from YumekoBot import (
+import Yumeko.modules.sql.global_bans_sql as sql
+from Yumeko.modules.sql.users_sql import get_user_com_chats
+from Yumeko import (
     DEV_USERS,
     EVENT_LOGS,
     OWNER_ID,
@@ -30,16 +30,16 @@ from YumekoBot import (
     sw,
     dispatcher,
 )
-from YumekoBot.modules.helper_funcs.chat_status import (
+from Yumeko.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from YumekoBot.modules.helper_funcs.extraction import (
+from Yumeko.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from YumekoBot.modules.helper_funcs.misc import send_to_list
+from Yumeko.modules.helper_funcs.misc import send_to_list
 
 GBAN_ENFORCE_GROUP = 6
 
