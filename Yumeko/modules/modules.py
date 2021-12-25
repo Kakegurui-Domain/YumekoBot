@@ -1,8 +1,8 @@
 import importlib
 import collections
 
-from lunaBot import dispatcher, telethn
-from lunaBot.__main__ import (
+from YumekoBot import dispatcher, telethn
+from YumekoBot.__main__ import (
     CHAT_SETTINGS,
     DATA_EXPORT,
     DATA_IMPORT,
@@ -13,7 +13,7 @@ from lunaBot.__main__ import (
     USER_INFO,
     USER_SETTINGS,
 )
-from lunaBot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from YumekoBot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
