@@ -1,7 +1,7 @@
 import sys
 import traceback
 from functools import wraps
-from lunaBot import pbot as app
+from Yumeko import pbot as app
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 
 LOG_GROUP_ID = int(-1001196083551)
