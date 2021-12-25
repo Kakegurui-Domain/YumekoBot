@@ -11,10 +11,10 @@ from telegram.ext import (
     run_async,
 )
 
-import YumekoBot.modules.sql.users_sql as sql
-from YumekoBot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
-from YumekoBot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
-from YumekoBot.modules.sql.users_sql import get_all_users
+import Yumeko.modules.sql.users_sql as sql
+from Yumeko import DEV_USERS, LOGGER, OWNER_ID, dispatcher
+from Yumeko.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from Yumeko.modules.sql.users_sql import get_all_users
 
 USERS_GROUP = 4
 CHAT_GROUP = 5
