@@ -1,7 +1,7 @@
 import traceback
 
-from lunaBot import pbot as app
-from lunaBot.utils.inlinefuncs import *
+from YumekoBot import pbot as app
+from YumekoBot.utils.inlinefuncs import *
 
 __mod_name__ = "Inline"
 __help__ = """
