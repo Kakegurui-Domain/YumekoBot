@@ -27,7 +27,7 @@ from telethon import Button
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
 
-from lunaBot import telethn
+from YumekoBot import telethn
 
 
 @telethn.on(events.NewMessage(pattern="^/mentionall ?(.*)"))
