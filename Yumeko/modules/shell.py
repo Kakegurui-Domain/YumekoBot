@@ -1,7 +1,7 @@
 import subprocess
 
-from YumekoBot import LOGGER, dispatcher
-from YumekoBot.modules.helper_funcs.chat_status import dev_plus
+from Yumeko import LOGGER, dispatcher
+from Yumeko.modules.helper_funcs.chat_status import dev_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.ext.dispatcher import run_async
