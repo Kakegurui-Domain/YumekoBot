@@ -2,8 +2,8 @@ import datetime
 from typing import List
 
 import requests
-from lunaBot import TIME_API_KEY, dispatcher
-from lunaBot.modules.disable import DisableAbleCommandHandler
+from YumekoBot import TIME_API_KEY, dispatcher
+from YumekoBot.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
