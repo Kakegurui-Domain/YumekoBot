@@ -2,9 +2,9 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from lunaBot import DEV_USERS
-from lunaBot import pbot as app
-from lunaBot.core.sections import section
+from YumekoBot import DEV_USERS
+from YumekoBot import pbot as app
+from YumekoBot.core.sections import section
 
 
 async def get_user_info(user, already=False):
