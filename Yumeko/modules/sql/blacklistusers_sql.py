@@ -1,6 +1,6 @@
 import threading
 
-from lunaBot.modules.sql import BASE, SESSION
+from Yumeko.modules.sql import BASE, SESSION
 from sqlalchemy import Column, String, UnicodeText
 
 
