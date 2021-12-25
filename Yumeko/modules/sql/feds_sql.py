@@ -1,7 +1,7 @@
 import threading
 
-from lunaBot import dispatcher
-from lunaBot.modules.sql import BASE, SESSION
+from Yumeko import dispatcher
+from Yumeko.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, BigInteger, String, UnicodeText
 from telegram.error import BadRequest, Unauthorized
 
