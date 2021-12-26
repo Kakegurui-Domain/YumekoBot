@@ -1,5 +1,9 @@
 # YumekoBot
 
+##Credits✨
+SaitamaRobot
+Lunabot
+
 
 ## How to setup/deploy.
 
