@@ -1,7 +1,9 @@
 # YumekoBot
 
-##Credits✨
+## Credits✨
+
 SaitamaRobot
+
 Lunabot
 
 
