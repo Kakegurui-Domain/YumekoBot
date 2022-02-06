@@ -1,28 +1,49 @@
-# YumekoBot
+<h2 align="center">
+    ──「 Yumeko IS A MODULAR BOT WITH ANIME THEME 」──
+</h2>
 
-## Credits✨
+<p align="center">
+  <img src="https://telegra.ph/file/900499565371726a3f256.jpg">
+</p>
 
-SaitamaRobot
+<p align="center">
+<a href="https://t.me/YumekoProBot"> <img src="https://github.com/shiinobu/SiestaRobot/blob/siesta/SiestaRobot/resources/siesta-robot.svg" alt="Siesta on Telegram" /> </a></br>
+<a href="https://github.com/shiinobu/YumekoBot/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-GPLv3-blueviolet?style=for-the-badge" alt="License" /> </a>
+<a href="https://makeapullrequest.com"> <img src="https://img.shields.io/badge/PRs-Welcome-yellow?style=for-the-badge" alt="PRs" /></a></br>
+<a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Made%20With-Python-orange?style=for-the-badge&logo=python" alt="Python" /> </a>
+<a href="https://GitHub.com/Kakegurui-domain/YumekoBot"> <img src="https://img.shields.io/badge/Maintained-Yes-lightgrey?style=for-the-badge" alt="Maintenance" /> </a>
+<a href="https://docs.sqlalchemy.org/en/14/"> <img src="https://img.shields.io/badge/SQL%20Alchemy-1.4.29-green?style=for-the-badge" alt="SQL Alchemy" /> </a><br>
+<a href="https://python-telegram-bot.org"> <img src="https://img.shields.io/badge/PTB-13.10-white?style=for-the-badge&logo=github" alt="Python Telegram Bot" /> </a>
+<a href="https://docs.telethon.dev"> <img src="https://img.shields.io/badge/Telethon-1.23.0-red?style=for-the-badge&logo=github" alt="Telethon" /> </a>
+<a href="https://docs.python.org"> <img src="https://img.shields.io/badge/Python-3.10.1-purple?style=for-the-badge&logo=python" alt="Python Version" /> </a>
+</p>
 
-Lunabot
+<p align="center">
+  <img src="https://telegra.ph/file/5835dce546af117c637d4.jpg">
+</p>
+
+<h2 align="center">
+    ──「 DEPLOY ON HEROKU 」──
+</h2>
+
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Kakegurui-domain/YumekoBot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-purple?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 
-## How to setup/deploy.
+<h2 align="center">
+    ──「 SUPPORT 」──
+</h2>
 
-### Read these notes carefully before proceeding 
- - Edit any mentions of @Yumekosupport to your own support chat
- - Lastly, if you are found to run this repo without the code being open sourced or the repository link not mentioned in the bot, we will push a gban for you in our network because of being in violation of the license, you are free to be a dick and not respect the open source code (we do not mind) but we will not be having you around our chats
- - This repo does not come with technical support, so DO NOT come to us asking help about deploy/console errors
+<p align="center">
+<a href="https://t.me/YumekoProBot"> <img src="https://img.shields.io/badge/Vain-User-green?style=for-the-badge&logo=telegram" alt="Yumeko on Telegram" /> </a>
+<a href="https://t.me/Yumekosupport"> <img src="https://img.shields.io/badge/Support-Chat-green?style=for-the-badge&logo=telegram" alt="Support Chat" /> </a>
+<a href="https://t.me/YumekoUpdates"> <img src="https://img.shields.io/badge/Update-Channel-green?style=for-the-badge&logo=telegram" alt="Update Channel" /> </a>
+</p>
 
-<details>
-  <summary>Steps to deploy on Heroku !! </summary>
+<h2 align="center">
+    ──「 CREDIT 」──
+</h2>
 
-```
-Fill in all the details, Deploy!
-Now go to https://dashboard.heroku.com/apps/(app-name)/resources ( Replace (app-name) with your app name )
-REMEMBER: Turn on worker dyno (Don't worry It's free :D) & Webhook
-Now send the bot /start, If it doesn't respond go to https://dashboard.heroku.com/apps/(app-name)/settings and remove webhook and port.
-```
-
-  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Kakegurui-Domain/YumekoBot.git)
-
+<p align="center">
+<a href="https://github.com/LunaBot"> <img src="https://img.shields.io/badge/Arya-Github-magenta?style=for-the-badge&logo=github" alt="Luna Github" /> </a>
+<a href="https://github.com/SaitamaRobot"> <img src="https://img.shields.io/badge/Kyy-Github-magenta?style=for-the-badge&logo=github" alt="SaitamaRobot Github" /> </a>
+</p>
