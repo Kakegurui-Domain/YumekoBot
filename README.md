@@ -44,6 +44,6 @@
 </h2>
 
 <p align="center">
-<a href="https://github.com/LunaBot"> <img src="https://img.shields.io/badge/LunaBot-Github-magenta?style=for-the-badge&logo=github" alt="Luna Github" /> </a>
+<a href="https://github.com/zeinzo/LunaRobotV2"> <img src="https://img.shields.io/badge/LunaBot-Github-magenta?style=for-the-badge&logo=github" alt="Luna Github" /> </a>
 <a href="https://github.com/AnimeKaizoku/SaitamaRobot"> <img src="https://img.shields.io/badge/SaitamaRobot-Github-magenta?style=for-the-badge&logo=github" alt="SaitamaRobot Github" /> </a>
 </p>
