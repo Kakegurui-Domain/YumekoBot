@@ -7,15 +7,15 @@
 </p>
 
 <p align="center">
-<a href="https://t.me/YumekoProBot"> <img src="https://github.com/shiinobu/SiestaRobot/blob/siesta/SiestaRobot/resources/siesta-robot.svg" alt="Siesta on Telegram" /> </a></br>
+<a href="https://t.me/YumekoProBot"> <img src="https://github.com/Kakegurui-Domain/YumekoBot/blob/Yumeko/YumekoBot/resources/siesta-robot.svg" alt="Yumeko on Telegram" /> </a></br>
 <a href="https://github.com/shiinobu/YumekoBot/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-GPLv3-blueviolet?style=for-the-badge" alt="License" /> </a>
 <a href="https://makeapullrequest.com"> <img src="https://img.shields.io/badge/PRs-Welcome-yellow?style=for-the-badge" alt="PRs" /></a></br>
 <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Made%20With-Python-orange?style=for-the-badge&logo=python" alt="Python" /> </a>
 <a href="https://GitHub.com/Kakegurui-domain/YumekoBot"> <img src="https://img.shields.io/badge/Maintained-Yes-lightgrey?style=for-the-badge" alt="Maintenance" /> </a>
 <a href="https://docs.sqlalchemy.org/en/14/"> <img src="https://img.shields.io/badge/SQL%20Alchemy-1.4.29-green?style=for-the-badge" alt="SQL Alchemy" /> </a><br>
-<a href="https://python-telegram-bot.org"> <img src="https://img.shields.io/badge/PTB-13.10-white?style=for-the-badge&logo=github" alt="Python Telegram Bot" /> </a>
+<a href="https://python-telegram-bot.org"> <img src="https://img.shields.io/badge/PTB-12.8-white?style=for-the-badge&logo=github" alt="Python Telegram Bot" /> </a>
 <a href="https://docs.telethon.dev"> <img src="https://img.shields.io/badge/Telethon-1.23.0-red?style=for-the-badge&logo=github" alt="Telethon" /> </a>
-<a href="https://docs.python.org"> <img src="https://img.shields.io/badge/Python-3.10.1-purple?style=for-the-badge&logo=python" alt="Python Version" /> </a>
+<a href="https://docs.python.org"> <img src="https://img.shields.io/badge/Python-2.8.1-purple?style=for-the-badge&logo=python" alt="Python Version" /> </a>
 </p>
 
 <p align="center">
