@@ -222,7 +222,7 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
     else:
-        update.effective_message.raboutvideo(
+        update.effective_message.reply_text(
             YUMEKO_IMG, caption= "Baka, I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime
             ),
