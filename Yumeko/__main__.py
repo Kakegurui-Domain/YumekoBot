@@ -90,7 +90,7 @@ buttons = [
     [
         InlineKeyboardButton(text="About", callback_data="yumeko_"),
         InlineKeyboardButton(
-            text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/"
+            text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/tyranteyeeee"
         ),
     ],
     [
