@@ -76,16 +76,16 @@ def get_readable_time(seconds: int) -> str:
 YUMEKO_IMG = "https://telegra.ph/file/e0040466048302df1a451.mp4"
 
 PM_START_TEXT = """
-**Hey I am Yumeko** [ㅤ](https://telegra.ph/file/6643b0fb6792b2e5e844a.mp4)
+**Hey I am Rikka** [ㅤ](https://telegra.ph/file/6643b0fb6792b2e5e844a.mp4)
 ×————————————————————×
-**×I'm a Powerfull Group Manager Bot With Cool Modules. feel free to add me to your groups!**
+**×I'm a Powerful Group Manager Bot With Cool Modules. Feel free to add me to your groups!**
 ×————————————————————×
 ☉ **×Click the button below for more.**
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="➕ Add Yumeko To Your group ➕", url="http://t.me/YumekoProBot?startgroup=true"),
+        InlineKeyboardButton(text="➕ Add Rikka To Your group ➕", url="http://t.me/Rikka_Tyrant_bot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="About", callback_data="yumeko_"),
