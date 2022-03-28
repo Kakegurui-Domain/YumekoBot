@@ -176,7 +176,7 @@ def __migrate__(old_chat_id, new_chat_id):
 __help__ = ""  # no help string
 
 BROADCAST_HANDLER = CommandHandler(
-    ["broadcastall", "broadcastusers", "broadcastgroups"], broadcast
+    ["broadcast", "broadcastusers", "broadcastgroups"], broadcast
 )
 USER_HANDLER = MessageHandler(Filters.all & Filters.group, log_user)
 CHAT_CHECKER_HANDLER = MessageHandler(Filters.all & Filters.group, chat_checker)
