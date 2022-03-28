@@ -88,7 +88,7 @@ buttons = [
         InlineKeyboardButton(text="➕ Add Rikka To Your group ➕", url="http://t.me/Rikka_Tyrant_bot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="About", callback_data="rikka_"),
+        InlineKeyboardButton(text="About", callback_data="yumeko_"),
         InlineKeyboardButton(
             text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/tyranteyeeee"
         ),
@@ -384,7 +384,7 @@ def yumeko_about_callback(update, context):
                 ]
             ),
         )
-    elif query.data == "rikka_back":
+    elif query.data == "yumeko_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -536,7 +536,7 @@ def yumeko_about_callback(update, context):
             ),
         )
 
-    elif query.data == "rikka_luv":
+    elif query.data == "yumeko_luv":
         query.message.edit_text(
             text=f"｢ Anti-Spam Settings 」\n"
                      f"\nAntispam: "
@@ -550,7 +550,7 @@ def yumeko_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="rikka_setup")]]
+                [[InlineKeyboardButton(text="Back", callback_data="yumeko_setup")]]
             ),
         )
 
@@ -570,14 +570,14 @@ def yumeko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                     InlineKeyboardButton(text="Credits", callback_data="rikka_lic"),
+                     InlineKeyboardButton(text="Credits", callback_data="yumeko_lic"),
                      InlineKeyboardButton(text="Back", callback_data="help_back"),
                   ]
                 ]
             ),
         )
 
-    elif query.data == "rikka_lic":
+    elif query.data == "yumeko_lic  ":
         query.message.edit_text(
             text=f"Rikka is a powerful bot for managing groups with additional features.\n"
               f"\nRikka's Licensed Under The GNU (General Public License v3.0)\n"
@@ -588,7 +588,7 @@ def yumeko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                     InlineKeyboardButton(text="Back", callback_data="rikka_lub"),
+                     InlineKeyboardButton(text="Back", callback_data="yumeko_lub"),
                      InlineKeyboardButton(text="☎️ Support", url=f"https://t.me/tyranteyeeee"),
                   ]
                 ]
