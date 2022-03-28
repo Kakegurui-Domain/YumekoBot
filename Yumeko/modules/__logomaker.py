@@ -245,7 +245,12 @@ LOGO_LINKS            = ["https://telegra.ph/file/d1838efdafce9fe611d0c.jpg",
                          "https://telegra.ph/file/24fff051c39b815e5078a.jpg",
                          "https://telegra.ph/file/258c02c002e89287d5d9b.jpg",
                          "https://telegra.ph/file/d2abc99773a9d4954c2ba.jpg",                       
-                         "https://telegra.ph/file/9849b3940f063b065f4e3.jpg"
+                         "https://telegra.ph/file/9849b3940f063b065f4e3.jpg",
+                         "https://telegra.ph/file/39fcde1faab142883b8c0.jpg",
+                         "https://telegra.ph/file/cb53f649c7a2f8606aa55.jpg",
+                         "https://telegra.ph/file/22f94ab32ef8b7a49c11d.jpg",
+                         "https://telegra.ph/file/86af1c2c1f81aef4a2876.jpg",
+                         "https://telegra.ph/file/e754cbd01c5c60937c04c.jpg",
                          ]
 
 @register(pattern="^/logo ?(.*)")
@@ -254,7 +259,7 @@ async def lego(event):
  if event.sender_id != OWNER_ID and not quew:
   await event.reply('`Please give me the text for the logo!`\n`Example /logo <pantek>`')
   return
- pesan = await event.reply('`Creating your logo...`')
+ pesan = await event.reply('`Creating your logo with the power of tyrant eye...`')
  try:
     text = event.pattern_match.group(1)
     randc = random.choice(LOGO_LINKS)
@@ -274,11 +279,11 @@ async def lego(event):
     x = (image_widthz-w)/2
     y = ((image_heightz-h)/2+6)
     draw.text((x, y), text, font=font, fill="white", stroke_width=1, stroke_fill="black")
-    fname = "luna.png"
+    fname = "rikka.png"
     img.save(fname, "png")
-    await telethn.send_file(event.chat_id, file=fname, caption = f"Made by [Luna ✨](https://t.me/lunatapibot)")         
+    await telethn.send_file(event.chat_id, file=fname, caption = f"Made by [Rikka ✨](https://t.me/Rikka_Tyrant_bot)")         
     await pesan.delete()
     if os.path.exists(fname):
             os.remove(fname)
  except Exception as e:
-    await event.reply(f'Error, Report @lunaXresso')
+    await event.reply(f'Error, Report @tyranteyeeee')
