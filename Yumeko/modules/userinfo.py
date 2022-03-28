@@ -299,7 +299,7 @@ def info(update: Update, context: CallbackContext):
         text += "\n\nThe magic class of this person is 'Priestess'."
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\nThe magic class of this person is 'Fallen Angle'."
+        text += "\n\nThe magic class of this person is 'Fallen Angel'."
         disaster_level_present = True
     elif user.id in WOLVES:
         text += "\n\nThe magic class of this person is 'Magic Fairies'."
