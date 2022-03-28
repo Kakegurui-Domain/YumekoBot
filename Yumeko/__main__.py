@@ -88,7 +88,7 @@ buttons = [
         InlineKeyboardButton(text="➕ Add Rikka To Your group ➕", url="http://t.me/Rikka_Tyrant_bot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="About", callback_data="yumeko_"),
+        InlineKeyboardButton(text="About", callback_data="rikka_"),
         InlineKeyboardButton(
             text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/tyranteyeeee"
         ),
@@ -107,7 +107,7 @@ HELP_STRINGS = """
 ❂ /help: Sends this message; I'll tell you more about myself.
 
 All commands can either be used with / or !.
-If you want to report any bugs or need any help with setting up Yumeko, reach us at here"""
+If you want to report any bugs or need any help with setting up Rikka, reach us at here"""
 
 
 
@@ -384,7 +384,7 @@ def yumeko_about_callback(update, context):
                 ]
             ),
         )
-    elif query.data == "yumeko_back":
+    elif query.data == "rikka_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -504,7 +504,7 @@ def yumeko_about_callback(update, context):
                  f"\nYou can add me to your group by clicking this link and selecting the chat.\n"
                  f"\nRead Admin Permissions and Anti-spam for basic info.\n"
                  f"\nRead Detailed Setup Guide to learn about setting up the bot in detail. (Recommended)\n"
-                 f"\nIf you do need help with further instructions feel free to ask in @lunaXresso.",
+                 f"\nIf you do need help with further instructions feel free to ask in @tyranteyeeee.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -524,7 +524,7 @@ def yumeko_about_callback(update, context):
     elif query.data == "yumeko_del":
         query.message.edit_text(
             text=f"｢ Admin Permissions 」\n"
-                     f"\nTo avoid slowing down, Yumeko caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the /promote command), Yumeko will only find out ~10 minutes later.\n"
+                     f"\nTo avoid slowing down, Rikka caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the /promote command), Yumeko will only find out ~10 minutes later.\n"
                     f"\nIf you want to update them immediately, you can use the /admincache or /reload command, that'll force Yumeko to check who the admins are again and their permissions\n"
                     f"\nIf you are getting a message saying:\nYou must be this chat administrator to perform this action!\n"
                     f"\nThis has nothing to do with Yumeko's rights; this is all about YOUR permissions as an admin. Yumeko respects admin permissions; if you do not have the Ban Users permission as a telegram admin, you won't be able to ban users with Yumeko. Similarly, to change Yumeko settings, you need to have the Change group info permission.\n"
@@ -536,11 +536,11 @@ def yumeko_about_callback(update, context):
             ),
         )
 
-    elif query.data == "yumeko_luv":
+    elif query.data == "rikka_luv":
         query.message.edit_text(
             text=f"｢ Anti-Spam Settings 」\n"
                      f"\nAntispam: "
-                     f"\nBy enabling this, you can protect your groups free from scammers/spammers.\nRun /antispam on in your chat to enable.\nAppeal Chat: @YumekoSupport\n"
+                     f"\nBy enabling this, you can protect your groups free from scammers/spammers.\nRun /antispam on in your chat to enable.\nAppeal Chat: @tyranteyeeee\n"
                      f"\n✪ Anti-Flood allows you to keep your chat clean from flooding."
                      f"\n✪ With the help of Blaclists you can blacklist words,sentences and stickers which you don't want to be used by group members."
                      f"\n✪ By enabling Reports, admins get notified when users reports in chat."
@@ -550,18 +550,18 @@ def yumeko_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="yumeko_setup")]]
+                [[InlineKeyboardButton(text="Back", callback_data="rikka_setup")]]
             ),
         )
 
-    elif query.data == "yumeko_lub":
+    elif query.data == "rikka_lub":
         query.message.edit_text(
             text=f" ｢ Terms and Conditions 」\n"
                 f"\nTo use this bot, You need to agree with Terms and Conditions.\n"
                 f"\n✪ If someone is spamming your group, you can use report feature from your Telegram Client."
                 f"\n✪ Make sure antiflood is enabled, so that users cannot flood/spam your chat."
                 f"\n✪ Do not spam commands, buttons, or anything in bot PM, else you will be Ignored by bot or Gbanned."
-                f"\n✪ If you need to ask anything about this bot or you need help, reach us at @YumekoSupport"
+                f"\n✪ If you need to ask anything about this bot or you need help, reach us at @tyranteyeeee"
                 f"\n✪ Make sure you read rules and follow them when you join Support Chat."
                 f"\n✪ Spamming in Support Chat, will reward you GBAN and reported to Telegram as well.\n"
                 f"\nTerms & Conditions can be changed anytime.",
@@ -570,26 +570,26 @@ def yumeko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                     InlineKeyboardButton(text="Credits", callback_data="yumeko_lic"),
+                     InlineKeyboardButton(text="Credits", callback_data="rikka_lic"),
                      InlineKeyboardButton(text="Back", callback_data="help_back"),
                   ]
                 ]
             ),
         )
 
-    elif query.data == "yumeko_lic":
+    elif query.data == "rikka_lic":
         query.message.edit_text(
-            text=f"Yumeko is a powerful bot for managing groups with additional features.\n"
-              f"\nYumeko's Licensed Under The GNU (General Public License v3.0)\n"
-              f"\nIf you have any question about Luna,"
+            text=f"Rikka is a powerful bot for managing groups with additional features.\n"
+              f"\nRikka's Licensed Under The GNU (General Public License v3.0)\n"
+              f"\nIf you have any question about Rikka,"
               f"\nreach us at Support Chat.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                     InlineKeyboardButton(text="Back", callback_data="yumeko_lub"),
-                     InlineKeyboardButton(text="☎️ Support", url=f"https://t.me/"),
+                     InlineKeyboardButton(text="Back", callback_data="rikka_lub"),
+                     InlineKeyboardButton(text="☎️ Support", url=f"https://t.me/tyranteyeeee"),
                   ]
                 ]
             ),
@@ -600,7 +600,7 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi.. ɪ'ᴀᴍ Yumeko*
+            text=""" Hi.. ɪ'ᴀᴍ Rikka*
                  \nHere is the [sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ](https://www Xhamster.com) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -659,7 +659,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ 📢 ",
-                            url="https://t.me/{}".format(SUPPORT_CHAT),
+                            url="https://t.me/tyranteyeeee".format(SUPPORT_CHAT),
                         )
                     ],
                 ]
@@ -703,7 +703,7 @@ def send_settings(chat_id, user_id, user=False):
         else:
             dispatcher.bot.send_message(
                 user_id,
-                "Sepertinya tidak ada pengaturan khusus pengguna yang tersedia :'(",
+                "There doesn't seem to be any user-specific settings available :'(",
                 parse_mode=ParseMode.MARKDOWN,
             )
 
